@@ -29,20 +29,8 @@ final class LocationListInputView: UIView {
         $0.spacing = Padding.double
     }
     
-    private lazy var startDate = UITextField.make {
+    private lazy var locationTextField = UITextField.make {
         $0.placeholder = "Locations"
-        $0.font = .systemFont(ofSize: 12, weight: .regular)
-        $0.borderStyle = UITextField.BorderStyle.roundedRect
-        $0.autocorrectionType = UITextAutocorrectionType.no
-        $0.keyboardType = UIKeyboardType.default
-        $0.returnKeyType = UIReturnKeyType.done
-        $0.clearButtonMode = UITextField.ViewMode.whileEditing
-        $0.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
-        $0.delegate = self
-    }
-    
-    private lazy var endDate = UITextField.make {
-        $0.placeholder = "endDate Date"
         $0.font = .systemFont(ofSize: 12, weight: .regular)
         $0.borderStyle = UITextField.BorderStyle.roundedRect
         $0.autocorrectionType = UITextAutocorrectionType.no
@@ -67,7 +55,7 @@ final class LocationListInputView: UIView {
         addSubviews([
             container.addArrangedSubviews([
                 datePickerStack.addArrangedSubviews([
-                    startDate
+                    locationTextField
                 ]),
                 locationListStack.addArrangedSubviews([
                     firstLocationListView,

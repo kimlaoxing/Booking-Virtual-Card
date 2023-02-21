@@ -3,7 +3,7 @@ import Declayout
 import Components
 import UIKit
 
-final class BookingCardView: UIView {
+final class SelectDateView: UIView {
     
     private var startDatePicker = UIDatePicker()
     private var endDatePicker = UIDatePicker()
@@ -150,7 +150,7 @@ final class BookingCardView: UIView {
 }
 
 
-extension BookingCardView: UITextFieldDelegate {
+extension SelectDateView: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
     }

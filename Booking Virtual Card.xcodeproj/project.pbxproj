@@ -16,7 +16,7 @@
 		EA02C48229A47B6C00EB3125 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA02C48029A47B6C00EB3125 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA02C48729A47ED700EB3125 /* VirtualCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48629A47ED700EB3125 /* VirtualCardView.swift */; };
 		EA02C48B29A47F0400EB3125 /* VirtualCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48A29A47F0400EB3125 /* VirtualCardViewController.swift */; };
-		EA02C48D29A485CA00EB3125 /* BookingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48C29A485CA00EB3125 /* BookingCardView.swift */; };
+		EA02C48D29A485CA00EB3125 /* SelectDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48C29A485CA00EB3125 /* SelectDateView.swift */; };
 		EA02C48F29A495EA00EB3125 /* LocationListInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */; };
 		EA02C49229A4999200EB3125 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C49129A4999200EB3125 /* LocationListView.swift */; };
 		EA02C49429A49FEA00EB3125 /* SubmitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C49329A49FEA00EB3125 /* SubmitedView.swift */; };
@@ -49,7 +49,7 @@
 		EA02C48029A47B6C00EB3125 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA02C48629A47ED700EB3125 /* VirtualCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardView.swift; sourceTree = "<group>"; };
 		EA02C48A29A47F0400EB3125 /* VirtualCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardViewController.swift; sourceTree = "<group>"; };
-		EA02C48C29A485CA00EB3125 /* BookingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCardView.swift; sourceTree = "<group>"; };
+		EA02C48C29A485CA00EB3125 /* SelectDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateView.swift; sourceTree = "<group>"; };
 		EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListInputView.swift; sourceTree = "<group>"; };
 		EA02C49129A4999200EB3125 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		EA02C49329A49FEA00EB3125 /* SubmitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitedView.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				EA02C48629A47ED700EB3125 /* VirtualCardView.swift */,
-				EA02C48C29A485CA00EB3125 /* BookingCardView.swift */,
+				EA02C48C29A485CA00EB3125 /* SelectDateView.swift */,
 				EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */,
 				EA02C49129A4999200EB3125 /* LocationListView.swift */,
 				EA02C49329A49FEA00EB3125 /* SubmitedView.swift */,
@@ -268,7 +268,7 @@
 				EA02C49229A4999200EB3125 /* LocationListView.swift in Sources */,
 				EA02C49429A49FEA00EB3125 /* SubmitedView.swift in Sources */,
 				EA02C42E29A472F100EB3125 /* SceneDelegate.swift in Sources */,
-				EA02C48D29A485CA00EB3125 /* BookingCardView.swift in Sources */,
+				EA02C48D29A485CA00EB3125 /* SelectDateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

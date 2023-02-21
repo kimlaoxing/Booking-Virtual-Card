@@ -46,7 +46,7 @@ final class VirtualCardViewController: UIViewController {
     }
     
     private lazy var virtualCardView = VirtualCardView()
-    private lazy var bookingCardView = BookingCardView.make {
+    private lazy var selectDateView = SelectDateView.make {
         $0.isUserInteractionEnabled = true
     }
     
@@ -72,7 +72,7 @@ final class VirtualCardViewController: UIViewController {
                         bookingCardButton
                     ]),
                     virtualCardView,
-                    bookingCardView,
+                    selectDateView,
                     locationListInputView,
                     submitedView
                 ]),
@@ -86,7 +86,7 @@ final class VirtualCardViewController: UIViewController {
     private func defaultButton() {
         virtualCardButton.setContentWhenTapped()
         bookingCardButton.setContentWhenDidntTapped()
-        bookingCardView.isHidden = true
+        selectDateView.isHidden = true
         locationListInputView.isHidden = true
         submitButtonStack.isHidden = true
         submitedView.isHidden = true
@@ -105,7 +105,7 @@ final class VirtualCardViewController: UIViewController {
         bookingCardButton.setContentWhenTapped()
         virtualCardButton.setContentWhenDidntTapped()
         virtualCardView.isHidden = true
-        bookingCardView.isHidden = false
+        selectDateView.isHidden = false
         locationListInputView.isHidden = false
         submitButtonStack.isHidden = false
         submitedView.isHidden = true
@@ -115,7 +115,7 @@ final class VirtualCardViewController: UIViewController {
         virtualCardButton.setContentWhenTapped()
         bookingCardButton.setContentWhenDidntTapped()
         virtualCardView.isHidden = false
-        bookingCardView.isHidden = true
+        selectDateView.isHidden = true
         locationListInputView.isHidden = true
         submitButtonStack.isHidden = true
         submitedView.isHidden = true
@@ -124,7 +124,7 @@ final class VirtualCardViewController: UIViewController {
     @objc private func didSelectSubmit() {
         submitButtonStack.isHidden = true
         virtualCardView.isHidden = true
-        bookingCardView.isHidden = true
+        selectDateView.isHidden = true
         locationListInputView.isHidden = true
         submitedView.isHidden = false
     }

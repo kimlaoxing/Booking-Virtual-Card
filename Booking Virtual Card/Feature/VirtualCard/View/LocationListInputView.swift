@@ -30,7 +30,7 @@ final class LocationListInputView: UIView {
     }
     
     private lazy var startDate = UITextField.make {
-        $0.placeholder = "Start Date"
+        $0.placeholder = "Locations"
         $0.font = .systemFont(ofSize: 12, weight: .regular)
         $0.borderStyle = UITextField.BorderStyle.roundedRect
         $0.autocorrectionType = UITextAutocorrectionType.no

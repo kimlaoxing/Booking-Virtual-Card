@@ -1,0 +1,16 @@
+PODS:
+  - Declayout (1.3.0)
+
+DEPENDENCIES:
+  - Declayout
+
+SPEC REPOS:
+  trunk:
+    - Declayout
+
+SPEC CHECKSUMS:
+  Declayout: 24426cdeace1f83c25d1fc816dddffd49444e8f5
+
+PODFILE CHECKSUM: 92532184225a7c76258c478d5d548ef8181bd992
+
+COCOAPODS: 1.11.3

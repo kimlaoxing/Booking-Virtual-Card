@@ -1,0 +1,16 @@
+public enum DateFormat: String {
+    case serverDate = "yyyy-MM-dd"
+    case serverDateWithTime = "yyyy-MM-dd HH:mm:ss"
+    case dayMonthYear = "dd MMMM yyyy"
+    case dayMonthYearWithTime = "dd MMMM yyyy, HH:mm"
+    case hourMinute = "HH:mm"
+    case hourMinuteSecond = "HH:mm:ss"
+    case serverDateWithTimeAndT = "yyyy-MM-dd'T'HH:mm:ss"
+    case serverDateWithTimeAndTAndMilis = "yyy-MM-dd'T'HH:mm:ss.SSS"
+    case serverDateWitTimeAndTandZ = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    case dayDateMonthYear = "E dd-MM-yyyy"
+    case fullDayDateMonthYear = "EEEE, dd MMMM yyyy"
+    case fullDayDateMonthYearTimeZone = "EEEE, dd MMMM yyyy HH:mm 'WIB'"
+    case reverseServerDate = "dd-MM-yyyy"
+    case fullDayOnly = "EEEE"
+}

@@ -7,21 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		944548DB77D3F5685E3A464A /* Pods_Booking_Virtual_Card.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F95C53F8F184BA172531B5F /* Pods_Booking_Virtual_Card.framework */; };
 		EA02C42C29A472F000EB3125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C42B29A472F000EB3125 /* AppDelegate.swift */; };
 		EA02C42E29A472F100EB3125 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C42D29A472F100EB3125 /* SceneDelegate.swift */; };
-		EA02C43029A472F100EB3125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C42F29A472F100EB3125 /* ViewController.swift */; };
 		EA02C43529A472F300EB3125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA02C43429A472F300EB3125 /* Assets.xcassets */; };
 		EA02C43829A472F300EB3125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA02C43629A472F300EB3125 /* LaunchScreen.storyboard */; };
+		EA02C48129A47B6C00EB3125 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA02C48029A47B6C00EB3125 /* Components.framework */; };
+		EA02C48229A47B6C00EB3125 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA02C48029A47B6C00EB3125 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA02C48729A47ED700EB3125 /* VirtualCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48629A47ED700EB3125 /* VirtualCardView.swift */; };
+		EA02C48B29A47F0400EB3125 /* VirtualCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48A29A47F0400EB3125 /* VirtualCardViewController.swift */; };
+		EA02C48D29A485CA00EB3125 /* BookingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48C29A485CA00EB3125 /* BookingCardView.swift */; };
+		EA02C48F29A495EA00EB3125 /* LocationListInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */; };
+		EA02C49229A4999200EB3125 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C49129A4999200EB3125 /* LocationListView.swift */; };
+		EA02C49429A49FEA00EB3125 /* SubmitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C49329A49FEA00EB3125 /* SubmitedView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EA02C48329A47B6C00EB3125 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EA02C48229A47B6C00EB3125 /* Components.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1047A5E5B781B3B096B96545 /* Pods-Booking Virtual Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booking Virtual Card.release.xcconfig"; path = "Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card.release.xcconfig"; sourceTree = "<group>"; };
+		183CDE2BA89DB237AAFB943C /* Pods-Booking Virtual Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booking Virtual Card.debug.xcconfig"; path = "Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card.debug.xcconfig"; sourceTree = "<group>"; };
+		1F95C53F8F184BA172531B5F /* Pods_Booking_Virtual_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booking_Virtual_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA02C42829A472F000EB3125 /* Booking Virtual Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Booking Virtual Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA02C42B29A472F000EB3125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA02C42D29A472F100EB3125 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA02C42F29A472F100EB3125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA02C43429A472F300EB3125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA02C43729A472F300EB3125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA02C43929A472F300EB3125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA02C48029A47B6C00EB3125 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA02C48629A47ED700EB3125 /* VirtualCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardView.swift; sourceTree = "<group>"; };
+		EA02C48A29A47F0400EB3125 /* VirtualCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardViewController.swift; sourceTree = "<group>"; };
+		EA02C48C29A485CA00EB3125 /* BookingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCardView.swift; sourceTree = "<group>"; };
+		EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListInputView.swift; sourceTree = "<group>"; };
+		EA02C49129A4999200EB3125 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		EA02C49329A49FEA00EB3125 /* SubmitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +60,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA02C48129A47B6C00EB3125 /* Components.framework in Frameworks */,
+				944548DB77D3F5685E3A464A /* Pods_Booking_Virtual_Card.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92E3B401EF1E154CF7A1D1F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				183CDE2BA89DB237AAFB943C /* Pods-Booking Virtual Card.debug.xcconfig */,
+				1047A5E5B781B3B096B96545 /* Pods-Booking Virtual Card.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A81DFAE37B069385E5D25C52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA02C48029A47B6C00EB3125 /* Components.framework */,
+				1F95C53F8F184BA172531B5F /* Pods_Booking_Virtual_Card.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA02C41F29A472F000EB3125 = {
 			isa = PBXGroup;
 			children = (
 				EA02C42A29A472F000EB3125 /* Booking Virtual Card */,
 				EA02C42929A472F000EB3125 /* Products */,
+				92E3B401EF1E154CF7A1D1F8 /* Pods */,
+				A81DFAE37B069385E5D25C52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +107,43 @@
 		EA02C42A29A472F000EB3125 /* Booking Virtual Card */ = {
 			isa = PBXGroup;
 			children = (
+				EA02C48829A47EDB00EB3125 /* Feature */,
 				EA02C42B29A472F000EB3125 /* AppDelegate.swift */,
 				EA02C42D29A472F100EB3125 /* SceneDelegate.swift */,
-				EA02C42F29A472F100EB3125 /* ViewController.swift */,
 				EA02C43429A472F300EB3125 /* Assets.xcassets */,
 				EA02C43629A472F300EB3125 /* LaunchScreen.storyboard */,
 				EA02C43929A472F300EB3125 /* Info.plist */,
 			);
 			path = "Booking Virtual Card";
+			sourceTree = "<group>";
+		};
+		EA02C48829A47EDB00EB3125 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EA02C48929A47EEB00EB3125 /* VirtualCard */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		EA02C48929A47EEB00EB3125 /* VirtualCard */ = {
+			isa = PBXGroup;
+			children = (
+				EA02C49029A495EE00EB3125 /* View */,
+				EA02C48A29A47F0400EB3125 /* VirtualCardViewController.swift */,
+			);
+			path = VirtualCard;
+			sourceTree = "<group>";
+		};
+		EA02C49029A495EE00EB3125 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA02C48629A47ED700EB3125 /* VirtualCardView.swift */,
+				EA02C48C29A485CA00EB3125 /* BookingCardView.swift */,
+				EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */,
+				EA02C49129A4999200EB3125 /* LocationListView.swift */,
+				EA02C49329A49FEA00EB3125 /* SubmitedView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA02C43C29A472F300EB3125 /* Build configuration list for PBXNativeTarget "Booking Virtual Card" */;
 			buildPhases = (
+				FE52320528C88267B7F20448 /* [CP] Check Pods Manifest.lock */,
 				EA02C42429A472F000EB3125 /* Sources */,
 				EA02C42529A472F000EB3125 /* Frameworks */,
 				EA02C42629A472F000EB3125 /* Resources */,
+				942EAF46C526A500AC9A7F6B /* [CP] Embed Pods Frameworks */,
+				EA02C48329A47B6C00EB3125 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,14 +214,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		942EAF46C526A500AC9A7F6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE52320528C88267B7F20448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Booking Virtual Card-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA02C42429A472F000EB3125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA02C43029A472F100EB3125 /* ViewController.swift in Sources */,
+				EA02C48729A47ED700EB3125 /* VirtualCardView.swift in Sources */,
+				EA02C48B29A47F0400EB3125 /* VirtualCardViewController.swift in Sources */,
 				EA02C42C29A472F000EB3125 /* AppDelegate.swift in Sources */,
+				EA02C48F29A495EA00EB3125 /* LocationListInputView.swift in Sources */,
+				EA02C49229A4999200EB3125 /* LocationListView.swift in Sources */,
+				EA02C49429A49FEA00EB3125 /* SubmitedView.swift in Sources */,
 				EA02C42E29A472F100EB3125 /* SceneDelegate.swift in Sources */,
+				EA02C48D29A485CA00EB3125 /* BookingCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +404,7 @@
 		};
 		EA02C43D29A472F300EB3125 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183CDE2BA89DB237AAFB943C /* Pods-Booking Virtual Card.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +433,7 @@
 		};
 		EA02C43E29A472F300EB3125 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1047A5E5B781B3B096B96545 /* Pods-Booking Virtual Card.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

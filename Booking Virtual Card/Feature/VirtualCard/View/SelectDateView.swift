@@ -200,7 +200,3 @@ extension SelectDateView: UITextFieldDelegate {
         return true
     }
 }
-
-
-
-

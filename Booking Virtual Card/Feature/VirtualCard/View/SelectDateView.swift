@@ -55,7 +55,7 @@ final class SelectDateView: UIView {
         $0.clearButtonMode = UITextField.ViewMode.whileEditing
         $0.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         $0.delegate = self
-        $0.backgroundColor = .white
+        $0.backgroundColor = .lightGray
     }
     
     private lazy var endDate = UITextField.make {
@@ -68,7 +68,7 @@ final class SelectDateView: UIView {
         $0.clearButtonMode = UITextField.ViewMode.whileEditing
         $0.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         $0.delegate = self
-        $0.backgroundColor = .white
+        $0.backgroundColor = .lightGray
     }
     
     override init(frame: CGRect) {

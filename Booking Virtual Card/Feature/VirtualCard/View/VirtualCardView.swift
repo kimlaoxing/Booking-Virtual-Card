@@ -13,14 +13,14 @@ final class VirtualCardView: UIView {
     
     private lazy var containerVstack = UIView.make {
         $0.layer.cornerRadius = 15
-        $0.backgroundColor = .systemGray4
+        $0.backgroundColor = .lightGray
         $0.edges(to: container, Padding.half / 2)
     }
     
     private lazy var vStack = UIStackView.make {
         $0.axis = .vertical
         $0.layer.cornerRadius = 15
-        $0.backgroundColor = .systemGray4
+        $0.backgroundColor = .lightGray
         $0.edges(to: containerVstack, Padding.double)
     }
     

@@ -59,7 +59,7 @@ final class SelectDateView: UIView {
     }
     
     private lazy var endDate = UITextField.make {
-        $0.placeholder = "endDate Date"
+        $0.placeholder = "End Date"
         $0.font = .systemFont(ofSize: 12, weight: .regular)
         $0.borderStyle = UITextField.BorderStyle.roundedRect
         $0.autocorrectionType = UITextAutocorrectionType.no

@@ -7,7 +7,8 @@ final class LocationListInputView: UIView {
     
     private lazy var firstLocationListView = LocationListView()
     private lazy var secondLocationListView = LocationListView()
-    private lazy var thirdLocationListView = LocationListView()
+    private var pickerView = UIPickerView()
+    private var listLocation: [String] = ["Jakarta", "Bandung"]
     
     private lazy var container = UIStackView.make {
         $0.layer.cornerRadius = 15
@@ -39,11 +40,14 @@ final class LocationListInputView: UIView {
         $0.clearButtonMode = UITextField.ViewMode.whileEditing
         $0.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         $0.delegate = self
+        $0.backgroundColor = .white
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configurePickerView()
         subViews()
+        returnData()
     }
     
     required init?(coder: NSCoder) {
@@ -59,11 +63,51 @@ final class LocationListInputView: UIView {
                 ]),
                 locationListStack.addArrangedSubviews([
                     firstLocationListView,
-                    secondLocationListView,
-                    thirdLocationListView
+                    secondLocationListView
                 ])
             ])
         ])
+    }
+    
+    private func configurePickerView() {
+        locationTextField.inputView = pickerView
+        pickerView.delegate = self
+        pickerView.dataSource = self
+    }
+    
+    private func returnData() {
+        self.firstLocationListView.returnValue = { data in
+            self.listLocation.append(data)
+        }
+        
+        self.secondLocationListView.returnValue = { data in
+            self.listLocation.append(data)
+        }
+    }
+}
+
+extension LocationListInputView: UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return self.listLocation.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.listLocation[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if firstLocationListView.isFilled {
+            self.secondLocationListView.setContent(with: self.listLocation[row])
+            self.listLocation.remove(at: row)
+        } else {
+            self.firstLocationListView.setContent(with: self.listLocation[row])
+            self.listLocation.remove(at: row)
+        }
+        self.endEditing(true)
     }
 }
 
@@ -74,6 +118,15 @@ extension LocationListInputView: UITextFieldDelegate {
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        switch textField {
+        case locationTextField:
+            self.pickerView.reloadAllComponents()
+        default:
+            return true
+        }
+        pickerView.isUserInteractionEnabled = true
+        pickerView.selectRow(0, inComponent: 0, animated: true)
+        pickerView.reloadAllComponents()
         return true
     }
     

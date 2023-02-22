@@ -5,8 +5,9 @@ import UIKit
 
 final class SelectDateView: UIView {
     
-    private var startDatePicker = UIDatePicker()
-    private var endDatePicker = UIDatePicker()
+    private let startDatePicker = UIDatePicker()
+    private let endDatePicker = UIDatePicker()
+    private let formPickerView = UIPickerView()
     
     private lazy var container = UIStackView.make {
         $0.layer.cornerRadius = 15
@@ -54,6 +55,7 @@ final class SelectDateView: UIView {
         $0.clearButtonMode = UITextField.ViewMode.whileEditing
         $0.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         $0.delegate = self
+        $0.backgroundColor = .white
     }
     
     private lazy var endDate = UITextField.make {
@@ -66,11 +68,15 @@ final class SelectDateView: UIView {
         $0.clearButtonMode = UITextField.ViewMode.whileEditing
         $0.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         $0.delegate = self
+        $0.backgroundColor = .white
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         subViews()
+        creatDoneButtonForStartDate()
+        creatDoneButtonForEndDate()
+        configureDatePicker()
     }
     
     required init?(coder: NSCoder) {
@@ -93,10 +99,9 @@ final class SelectDateView: UIView {
                 ])
             ])
         ])
-        setUpdateDatePicker()
     }
     
-    private func setUpdateDatePicker() {
+    private func configureDatePicker() {
         startDatePicker.datePickerMode = .date
         startDatePicker.maximumDate = Date()
         startDatePicker.addTarget(self, action: #selector(startDatePickerChanged(picker:)), for: .valueChanged)
@@ -108,14 +113,40 @@ final class SelectDateView: UIView {
         startDate.addTarget(self, action: #selector(onStartDateDidBegin(_:)), for: .editingDidBegin)
         
         endDatePicker.datePickerMode = .date
-        endDatePicker.maximumDate = Date()
         endDatePicker.addTarget(self, action: #selector(endDatePickerChanged(picker:)), for: .valueChanged)
+        endDatePicker.setDate(Date(), unit: .day, deltaMinimum: -30, deltaMaximum: 1, animated: true)
         
         if #available(iOS 14.0, *) {
             endDatePicker.preferredDatePickerStyle = .inline
         }
         endDate.inputView = endDatePicker
         endDate.addTarget(self, action: #selector(onEndDateDidBegin(_:)), for: .editingDidBegin)
+    }
+    
+    private func creatDoneButtonForStartDate() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneStartDate))
+        toolBar.setItems([doneBtn], animated: true)
+        startDate.inputAccessoryView = toolBar
+    }
+    
+    private func creatDoneButtonForEndDate() {
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let doneBtn = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneEndDate))
+        toolBar.setItems([doneBtn], animated: true)
+        endDate.inputAccessoryView = toolBar
+    }
+    
+    @objc func doneStartDate() {
+        startDate.text = self.startDatePicker.date.toString(with: .reverseServerDate)
+        self.endEditing(true)
+    }
+    
+    @objc func doneEndDate() {
+        endDate.text = self.endDatePicker.date.toString(with: .reverseServerDate)
+        self.endEditing(true)
     }
     
     @objc func startDatePickerChanged(picker: UIDatePicker) {
@@ -126,8 +157,7 @@ final class SelectDateView: UIView {
         endDate.text = picker.date.toString(with: .reverseServerDate)
     }
     
-    @objc
-    private func onStartDateDidBegin(_ textfield: UITextField){
+    @objc private func onStartDateDidBegin(_ textfield: UITextField){
         if let text = textfield.text {
             if text.isEmpty{
                 startDatePicker.setDate(Date(), animated: true)
@@ -137,8 +167,7 @@ final class SelectDateView: UIView {
         }
     }
     
-    @objc
-    private func onEndDateDidBegin(_ textfield: UITextField){
+    @objc private func onEndDateDidBegin(_ textfield: UITextField){
         if let text = textfield.text {
             if text.isEmpty{
                 endDatePicker.setDate(Date(), animated: true)

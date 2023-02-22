@@ -5,6 +5,10 @@ import UIKit
 
 final class LocationListView: UIView {
     
+    var isFilled: Bool = false
+    var returnValue: ((String) -> Void)?
+    var valueLabel: String = ""
+    
     private lazy var container = UIStackView.make {
         $0.layer.cornerRadius = 15
         $0.backgroundColor = .clear
@@ -29,7 +33,7 @@ final class LocationListView: UIView {
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 12, weight: .regular)
         $0.textAlignment = .left
-        $0.text = "ON Space, GF, ME COMM"
+        $0.text = "No Data"
     }
     
     private lazy var separator = UIView.make {
@@ -41,12 +45,13 @@ final class LocationListView: UIView {
         $0.clipsToBounds = true
         $0.image = UIImage(named: "closeButton")
         $0.contentMode = .scaleAspectFit
+        $0.isUserInteractionEnabled = true
     }
-    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         subViews()
+        configureButton()
     }
     
     required init?(coder: NSCoder) {
@@ -65,5 +70,24 @@ final class LocationListView: UIView {
                 separator
             ])
         ])
+    }
+    
+    private func configureButton() {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(removeContent))
+        self.closeButton.addGestureRecognizer(gesture)
+    }
+    
+    @objc private func removeContent() {
+        self.locationValue.text = "No Data"
+        self.returnValue?(self.valueLabel)
+        self.isFilled = false
+        self.closeButton.isUserInteractionEnabled = false
+    }
+    
+    func setContent(with location: String) {
+        locationValue.text = location
+        self.valueLabel = location
+        self.isFilled = true
+        self.closeButton.isUserInteractionEnabled = true
     }
 }

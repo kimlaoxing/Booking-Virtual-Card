@@ -9,10 +9,10 @@ final class VirtualCardViewController: UIViewController {
         $0.top(to: view, Padding.NORMAL_CONTENT_INSET)
         $0.bottom(to: view, Padding.double)
         $0.horizontalPadding(to: view)
+        $0.backgroundColor = .white
     }
     
     private lazy var container = ScrollViewContainer.make {
-
         $0.setSpacingBetweenItems(to: Padding.double * 2)
         $0.isScrollEnabled = false
     }

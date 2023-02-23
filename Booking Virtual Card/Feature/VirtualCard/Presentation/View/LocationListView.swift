@@ -1,7 +1,5 @@
-import Foundation
 import Declayout
 import Components
-import UIKit
 
 final class LocationListView: UIView {
     

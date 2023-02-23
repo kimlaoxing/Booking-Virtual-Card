@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/Declayout/Declayout.framework
 ${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework

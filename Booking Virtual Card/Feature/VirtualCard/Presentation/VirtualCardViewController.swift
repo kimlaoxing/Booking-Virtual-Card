@@ -4,6 +4,8 @@ import Components
 
 final class VirtualCardViewController: UIViewController {
     
+    var viewModel: VirtualCardViewModel?
+    
     private lazy var vStack = UIStackView.make {
         $0.axis = .vertical
         $0.top(to: view, Padding.NORMAL_CONTENT_INSET)
@@ -57,11 +59,32 @@ final class VirtualCardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel?.viewDidLoad()
         subViews()
         defaultButton()
         configureButton()
         setContent()
         handleNotification()
+        bind()
+    }
+    
+    private func bind() {
+        self.viewModel?.listPokemon.observe(on: self) { [weak self] data in
+            guard let self = self else { return }
+            self.locationListInputView.listLocation = data
+        }
+        
+        self.viewModel?.baseViewState.observe(on: self) { [weak self] view in
+            guard let self = self, let view = view else { return }
+            self.handleViewState(with: view)
+        }
+        
+        self.viewModel?.error.observe(on: self) { [weak self] error in
+            guard let error = error, let self = self else { return }
+            if error != "" {
+                self.showError(with: error)
+            }
+        }
     }
     
     private func subViews() {
@@ -85,6 +108,20 @@ final class VirtualCardViewController: UIViewController {
         ])
     }
     
+    private func handleViewState(with state: BaseViewState) {
+        switch state {
+        case .loading:
+            self.vStack.isHidden = true
+            self.manageLoadingActivity(isLoading: true)
+        case .normal:
+            self.vStack.isHidden = false
+            self.manageLoadingActivity(isLoading: false)
+        case .empty:
+            self.vStack.isHidden = false
+            self.manageLoadingActivity(isLoading: false)
+        }
+    }
+    
     private func defaultButton() {
         virtualCardButton.setContentWhenTapped()
         bookingCardButton.setContentWhenDidntTapped()
@@ -103,6 +140,16 @@ final class VirtualCardViewController: UIViewController {
         bookingCardButton.addGestureRecognizer(gestureBooking)
         virtualCardButton.addGestureRecognizer(gestureVirtual)
         submitButton.addGestureRecognizer(gestureSubmit)
+    }
+    
+    private func setContent() {
+        virtualCardView.setContent()
+    }
+    
+    private func handleNotification() {
+        self.locationListInputView.selectCallBackToast = {
+            self.locationIsSelected()
+        }
     }
     
     @objc private func didSelectBooking() {
@@ -135,16 +182,6 @@ final class VirtualCardViewController: UIViewController {
     
     @objc func backgroundTap() {
         self.view.endEditing(true)
-    }
-    
-    private func setContent() {
-        virtualCardView.setContent()
-    }
-    
-    private func handleNotification() {
-        self.locationListInputView.selectCallBackToast = {
-            self.locationIsSelected()
-        }
     }
 }
 

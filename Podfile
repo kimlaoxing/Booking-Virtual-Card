@@ -9,6 +9,7 @@ workspace 'Booking Virtual Card'
 def core_pods
 pod 'Declayout'
 pod 'Toast-Swift', '~> 5.0.1'
+pod 'Alamofire'
 end
 
 target 'Components' do

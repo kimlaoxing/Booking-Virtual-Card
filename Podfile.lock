@@ -1,20 +1,24 @@
 PODS:
+  - Alamofire (5.6.4)
   - Declayout (1.3.0)
   - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
+  - Alamofire
   - Declayout
   - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Declayout
     - Toast-Swift
 
 SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   Declayout: 24426cdeace1f83c25d1fc816dddffd49444e8f5
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: 3126f1f98411c76020c966bd92bc85297f141d9b
+PODFILE CHECKSUM: f9afea089ba80473cc04c40070c98ae6d9b0c9e7
 
 COCOAPODS: 1.11.3

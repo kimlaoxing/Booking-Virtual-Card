@@ -20,6 +20,14 @@
 		EA02C48F29A495EA00EB3125 /* LocationListInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */; };
 		EA02C49229A4999200EB3125 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C49129A4999200EB3125 /* LocationListView.swift */; };
 		EA02C49429A49FEA00EB3125 /* SubmitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C49329A49FEA00EB3125 /* SubmitedView.swift */; };
+		EAA08BC929A768D8002FD929 /* ListPokemonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BC829A768D8002FD929 /* ListPokemonResponse.swift */; };
+		EAA08BCD29A7690E002FD929 /* ListPokemonRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BCC29A7690E002FD929 /* ListPokemonRemote.swift */; };
+		EAA08BD129A7696C002FD929 /* ListPokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BD029A7696C002FD929 /* ListPokemonRepository.swift */; };
+		EAA08BD529A7699B002FD929 /* ListPokemonResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BD429A7699B002FD929 /* ListPokemonResult.swift */; };
+		EAA08BD829A76AF5002FD929 /* ListPokemonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BD729A76AF5002FD929 /* ListPokemonMapper.swift */; };
+		EAA08BDB29A76D1F002FD929 /* ListPokemonDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BDA29A76D1F002FD929 /* ListPokemonDomain.swift */; };
+		EAA08BE329A76F8E002FD929 /* VirtualCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BE229A76F8E002FD929 /* VirtualCardViewModel.swift */; };
+		EAA08BE629A7701A002FD929 /* ListPokemonInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BE529A7701A002FD929 /* ListPokemonInjection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +61,14 @@
 		EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListInputView.swift; sourceTree = "<group>"; };
 		EA02C49129A4999200EB3125 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		EA02C49329A49FEA00EB3125 /* SubmitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitedView.swift; sourceTree = "<group>"; };
+		EAA08BC829A768D8002FD929 /* ListPokemonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonResponse.swift; sourceTree = "<group>"; };
+		EAA08BCC29A7690E002FD929 /* ListPokemonRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonRemote.swift; sourceTree = "<group>"; };
+		EAA08BD029A7696C002FD929 /* ListPokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonRepository.swift; sourceTree = "<group>"; };
+		EAA08BD429A7699B002FD929 /* ListPokemonResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonResult.swift; sourceTree = "<group>"; };
+		EAA08BD729A76AF5002FD929 /* ListPokemonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonMapper.swift; sourceTree = "<group>"; };
+		EAA08BDA29A76D1F002FD929 /* ListPokemonDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonDomain.swift; sourceTree = "<group>"; };
+		EAA08BE229A76F8E002FD929 /* VirtualCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardViewModel.swift; sourceTree = "<group>"; };
+		EAA08BE529A7701A002FD929 /* ListPokemonInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +144,11 @@
 		EA02C48929A47EEB00EB3125 /* VirtualCard */ = {
 			isa = PBXGroup;
 			children = (
-				EA02C49029A495EE00EB3125 /* View */,
-				EA02C48A29A47F0400EB3125 /* VirtualCardViewController.swift */,
+				EAA08BE429A7700D002FD929 /* DI */,
+				EAA08BD629A76AE9002FD929 /* Utils */,
+				EAA08BD229A7698F002FD929 /* Domain */,
+				EAA08BC629A7685F002FD929 /* Data */,
+				EAA08BC529A7685A002FD929 /* Presentation */,
 			);
 			path = VirtualCard;
 			sourceTree = "<group>";
@@ -144,6 +163,75 @@
 				EA02C49329A49FEA00EB3125 /* SubmitedView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EAA08BC529A7685A002FD929 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EA02C49029A495EE00EB3125 /* View */,
+				EA02C48A29A47F0400EB3125 /* VirtualCardViewController.swift */,
+				EAA08BE229A76F8E002FD929 /* VirtualCardViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EAA08BC629A7685F002FD929 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EAA08BC729A768CE002FD929 /* Model */,
+				EAA08BCC29A7690E002FD929 /* ListPokemonRemote.swift */,
+				EAA08BD029A7696C002FD929 /* ListPokemonRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EAA08BC729A768CE002FD929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAA08BC829A768D8002FD929 /* ListPokemonResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAA08BD229A7698F002FD929 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EAA08BD929A76D1A002FD929 /* UseCase */,
+				EAA08BD329A76993002FD929 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EAA08BD329A76993002FD929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAA08BD429A7699B002FD929 /* ListPokemonResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAA08BD629A76AE9002FD929 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EAA08BD729A76AF5002FD929 /* ListPokemonMapper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EAA08BD929A76D1A002FD929 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				EAA08BDA29A76D1F002FD929 /* ListPokemonDomain.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		EAA08BE429A7700D002FD929 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				EAA08BE529A7701A002FD929 /* ListPokemonInjection.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,13 +350,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA02C48729A47ED700EB3125 /* VirtualCardView.swift in Sources */,
+				EAA08BCD29A7690E002FD929 /* ListPokemonRemote.swift in Sources */,
+				EAA08BD529A7699B002FD929 /* ListPokemonResult.swift in Sources */,
 				EA02C48B29A47F0400EB3125 /* VirtualCardViewController.swift in Sources */,
 				EA02C42C29A472F000EB3125 /* AppDelegate.swift in Sources */,
 				EA02C48F29A495EA00EB3125 /* LocationListInputView.swift in Sources */,
 				EA02C49229A4999200EB3125 /* LocationListView.swift in Sources */,
+				EAA08BE329A76F8E002FD929 /* VirtualCardViewModel.swift in Sources */,
 				EA02C49429A49FEA00EB3125 /* SubmitedView.swift in Sources */,
 				EA02C42E29A472F100EB3125 /* SceneDelegate.swift in Sources */,
 				EA02C48D29A485CA00EB3125 /* SelectDateView.swift in Sources */,
+				EAA08BD829A76AF5002FD929 /* ListPokemonMapper.swift in Sources */,
+				EAA08BDB29A76D1F002FD929 /* ListPokemonDomain.swift in Sources */,
+				EAA08BE629A7701A002FD929 /* ListPokemonInjection.swift in Sources */,
+				EAA08BD129A7696C002FD929 /* ListPokemonRepository.swift in Sources */,
+				EAA08BC929A768D8002FD929 /* ListPokemonResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

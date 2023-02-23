@@ -10,6 +10,7 @@ final class VirtualCardViewController: UIViewController {
         $0.bottom(to: view, Padding.double)
         $0.horizontalPadding(to: view)
         $0.backgroundColor = .white
+        $0.isUserInteractionEnabled = true
     }
     
     private lazy var container = ScrollViewContainer.make {
@@ -60,6 +61,7 @@ final class VirtualCardViewController: UIViewController {
         defaultButton()
         configureButton()
         setContent()
+        handleNotification()
     }
     
     private func subViews() {
@@ -96,6 +98,8 @@ final class VirtualCardViewController: UIViewController {
         let gestureBooking = UITapGestureRecognizer(target: self, action: #selector(didSelectBooking))
         let gestureVirtual = UITapGestureRecognizer(target: self, action: #selector(didSelectVirtual))
         let gestureSubmit = UITapGestureRecognizer(target: self, action: #selector(didSelectSubmit))
+        let gestureBackground = UITapGestureRecognizer.init(target: self, action: #selector(backgroundTap))
+        vStack.addGestureRecognizer(gestureBackground)
         bookingCardButton.addGestureRecognizer(gestureBooking)
         virtualCardButton.addGestureRecognizer(gestureVirtual)
         submitButton.addGestureRecognizer(gestureSubmit)
@@ -129,9 +133,18 @@ final class VirtualCardViewController: UIViewController {
         submitedView.isHidden = false
     }
     
+    @objc func backgroundTap() {
+        self.view.endEditing(true)
+    }
+    
     private func setContent() {
         virtualCardView.setContent()
     }
     
+    private func handleNotification() {
+        self.locationListInputView.selectCallBackToast = {
+            self.locationIsSelected()
+        }
+    }
 }
 

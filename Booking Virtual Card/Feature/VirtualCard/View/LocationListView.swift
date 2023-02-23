@@ -6,8 +6,8 @@ import UIKit
 final class LocationListView: UIView {
     
     var isFilled: Bool = false
-    var returnValue: ((String) -> Void)?
     var valueLabel: String = ""
+    var closeButtonCallBack: (() -> Void)?
     
     private lazy var container = UIStackView.make {
         $0.layer.cornerRadius = 15
@@ -79,9 +79,9 @@ final class LocationListView: UIView {
     
     @objc private func removeContent() {
         self.locationValue.text = "No Data"
-        self.returnValue?(self.valueLabel)
         self.isFilled = false
         self.closeButton.isUserInteractionEnabled = false
+        self.closeButtonCallBack?()
     }
     
     func setContent(with location: String) {

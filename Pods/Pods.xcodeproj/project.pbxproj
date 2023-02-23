@@ -7,31 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BE1B16A552A2E2C33443E17BCEAAE23 /* UIView+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04D00652178414274A7F4BB7778DA72 /* UIView+Spacing.swift */; };
-		4FF0E01EC76ED24FF174230773546D2F /* UIView+Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BC8700CE1BCFE07810C73AF3BEAC9 /* UIView+Dimension.swift */; };
-		57AC0680003F8387FA9466E80B1450AA /* Declayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8603C5F67BE13A7528D39B19CC2F6A76 /* Declayout-dummy.m */; };
-		6872BA2DC3B8D9FB6FD1F26FB34487DF /* Pods-Booking Virtual Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7C83653792CEBFA25ED3625C81EF81 /* Pods-Booking Virtual Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E9C605160EDA11B4D18C3B1943E3502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7B41D869276740A0E7839574DF7003BB /* Pods-Components-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BB826B7E84410BF4641FC2839DFCC1 /* Pods-Components-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87D73567F8F504AEFB34155985452459 /* UIView+Constraintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C4FD3BFA47089E911282672B87C341 /* UIView+Constraintable.swift */; };
-		8C0E3434E936284FFD1D4F0DE963744F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		912874A2B7DD66231D54C9514014176D /* UIView+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB7CCEF74307519A75B9274EF8484C2 /* UIView+Center.swift */; };
-		9B764D5FF532DF4C98C92095B404DCC0 /* Pods-Components-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F22AE4C5F835B91B376C4BD1DCE014 /* Pods-Components-dummy.m */; };
-		9CA795685EB54E764807B3B0A05253AF /* Declayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FD7E9758ECA6CED3C1E48392D2D6E9 /* Declayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A91641B9806A966F4E2E205846E0EA84 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD429E9026D8A37CDA128A67A8B973 /* Constraint.swift */; };
-		AEEBEEDF25E994EE51724A065CA806C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C4E2D65921A62D4A705E67FE61011FB5 /* Pods-Booking Virtual Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EB2EA04FD34F84B3A95F51C2EED4C0 /* Pods-Booking Virtual Card-dummy.m */; };
+		17E5507F92F0DF1DD5C3AB12E53F559F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		1F7501BAFD072FAFAF1C10672EB61BDC /* Pods-Components-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BB826B7E84410BF4641FC2839DFCC1 /* Pods-Components-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BE1B16A552A2E2C33443E17BCEAAE23 /* UIView+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66EA57A44E2E46D4F9A796E9210F6F6 /* UIView+Spacing.swift */; };
+		3D0B63300C72383E50AA8D786CB6C706 /* Pods-Booking Virtual Card-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7C83653792CEBFA25ED3625C81EF81 /* Pods-Booking Virtual Card-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FF0E01EC76ED24FF174230773546D2F /* UIView+Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562F58FEEE3A33C037DA632C49E01562 /* UIView+Dimension.swift */; };
+		57AC0680003F8387FA9466E80B1450AA /* Declayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ED9DC2F02059F56D318C94DB9F0AA3 /* Declayout-dummy.m */; };
+		6DFA70326D4C540DC43BD455F5A4A658 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C2849D8B67F6BEC130E94DA9128943 /* Toast-Swift-dummy.m */; };
+		87D73567F8F504AEFB34155985452459 /* UIView+Constraintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B582831480CBA5017179BFD83DE95 /* UIView+Constraintable.swift */; };
+		87E3B15B2AA7D226CB60059610C1241A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEFE490E4A06D19E868B2B9014BB8BF /* QuartzCore.framework */; };
+		8A2486C7A3FBC7B19189E354E9DBDB2B /* Pods-Components-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F22AE4C5F835B91B376C4BD1DCE014 /* Pods-Components-dummy.m */; };
+		8FA6BCE7489C31CE36A3B1A138FB298A /* Pods-Booking Virtual Card-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33EB2EA04FD34F84B3A95F51C2EED4C0 /* Pods-Booking Virtual Card-dummy.m */; };
+		912874A2B7DD66231D54C9514014176D /* UIView+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A280721251F73903BC2CCBDA155A9 /* UIView+Center.swift */; };
+		97F5CEDBA74096DD37816D78207E894E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		9CA795685EB54E764807B3B0A05253AF /* Declayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 683B5D7E3C3A060374634A7ED6917285 /* Declayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A91641B9806A966F4E2E205846E0EA84 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F1F9361DFA7B335F6E4AA7A09CF96 /* Constraint.swift */; };
+		AEEBEEDF25E994EE51724A065CA806C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		BF20C741EBB18F936CA31F2E41DC9F23 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA4A75FCBEAA557D9727D6E73D571B9 /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAE29563450C7ED7B9BEFD4F8C3788CA /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BA672AE01798B48839A3C994AE368 /* Toast.swift */; };
+		E0B8447052A6492D2A9F3DAF70CC078C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1FCD54CC6B836911E3AF9B3584510AE7 /* PBXContainerItemProxy */ = {
+		6366952C3F314177EDCFBC63B49CC0F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
+			remoteInfo = "Toast-Swift";
+		};
+		A1114B5965BD44DDBA3EDEB294063ED0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
+			remoteInfo = "Toast-Swift";
+		};
+		EC3DD8D60D2FC92733AC2FC2B762865A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 22569AF7E17069A0364671B0FEAA5CCC;
 			remoteInfo = Declayout;
 		};
-		748BD9C84482EA3F420C24A04B921973 /* PBXContainerItemProxy */ = {
+		F48D7D4068E45826287D694611D6C89A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -41,43 +60,78 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0223AC0DC3385C2C673B57202AF980D9 /* Declayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Declayout-Info.plist"; sourceTree = "<group>"; };
 		0271EB6444C8890908CBC398D17EE4DF /* Pods-Booking Virtual Card-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Booking Virtual Card-Info.plist"; sourceTree = "<group>"; };
 		052D7975EE5D46D42DA2CC25A4F15BB5 /* Pods-Components-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Components-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0C87690BAB43B57FC78992CDE3C8253B /* Pods-Components.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Components.modulemap"; sourceTree = "<group>"; };
 		176B094CF99DE4093AE07779359942C4 /* Pods-Booking Virtual Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Booking Virtual Card.release.xcconfig"; sourceTree = "<group>"; };
-		1DB7CCEF74307519A75B9274EF8484C2 /* UIView+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Center.swift"; path = "Declayout/Sources/UIView+Center.swift"; sourceTree = "<group>"; };
+		183BA672AE01798B48839A3C994AE368 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		18A47EB4A73B4C8BE3405A9DFCE38D0D /* Toast-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		26BB826B7E84410BF4641FC2839DFCC1 /* Pods-Components-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Components-umbrella.h"; sourceTree = "<group>"; };
 		2AD7D8D0D74A60A8B9E806BF9889A4A7 /* Declayout */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Declayout; path = Declayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEFE490E4A06D19E868B2B9014BB8BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		33EB2EA04FD34F84B3A95F51C2EED4C0 /* Pods-Booking Virtual Card-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Booking Virtual Card-dummy.m"; sourceTree = "<group>"; };
 		36AB7AE4B1DF04131B9C30356A3A0D82 /* Pods-Components-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Components-acknowledgements.plist"; sourceTree = "<group>"; };
 		3D466F72AF7A9CC5705AE1DA08A8BB83 /* Pods-Booking Virtual Card */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Booking Virtual Card"; path = Pods_Booking_Virtual_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F40758B31CF72C09976BAB46572FC45 /* Declayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Declayout.debug.xcconfig; sourceTree = "<group>"; };
+		3DEB342B0C2ED2ECAFCD165D89112A9B /* Declayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Declayout.modulemap; sourceTree = "<group>"; };
+		40582F36A877ACE641FE45A54FA55F58 /* Toast-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		48ACB0B004E331195ECD066239F4B74C /* Pods-Booking Virtual Card-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Booking Virtual Card-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D7C83653792CEBFA25ED3625C81EF81 /* Pods-Booking Virtual Card-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Booking Virtual Card-umbrella.h"; sourceTree = "<group>"; };
+		4E084174998C8A9E7CBE94F63D72F03D /* Declayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Declayout-prefix.pch"; sourceTree = "<group>"; };
+		4E5A160C8A991C1B8ACDA3219BAF0ED8 /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
+		562F58FEEE3A33C037DA632C49E01562 /* UIView+Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Dimension.swift"; path = "Declayout/Sources/UIView+Dimension.swift"; sourceTree = "<group>"; };
 		61CE1C475CC299B38ECC5CF7235FC585 /* Pods-Booking Virtual Card-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Booking Virtual Card-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6EA4B3CADEA7FC6F85B247023DA577A9 /* Declayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Declayout-Info.plist"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		683B5D7E3C3A060374634A7ED6917285 /* Declayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Declayout-umbrella.h"; sourceTree = "<group>"; };
+		6AD7793370E3114A3F5178C6E6710921 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
 		78429428A8CA3EFC64179EBA5AE526B3 /* Pods-Components-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Components-Info.plist"; sourceTree = "<group>"; };
-		8603C5F67BE13A7528D39B19CC2F6A76 /* Declayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Declayout-dummy.m"; sourceTree = "<group>"; };
+		7B2A025084054057249BDB591A8BE5A1 /* Declayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Declayout.debug.xcconfig; sourceTree = "<group>"; };
+		86C2849D8B67F6BEC130E94DA9128943 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		896F1F9361DFA7B335F6E4AA7A09CF96 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Declayout/Sources/Constraint.swift; sourceTree = "<group>"; };
 		89F22AE4C5F835B91B376C4BD1DCE014 /* Pods-Components-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Components-dummy.m"; sourceTree = "<group>"; };
 		8AC38EEC0BE487B51777FF82D7955435 /* Pods-Booking Virtual Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Booking Virtual Card.debug.xcconfig"; sourceTree = "<group>"; };
+		8D0B582831480CBA5017179BFD83DE95 /* UIView+Constraintable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Constraintable.swift"; path = "Declayout/Sources/UIView+Constraintable.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DFEDAF1598F9A959041E5D45A7B5F29 /* Declayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Declayout-prefix.pch"; sourceTree = "<group>"; };
 		A96D96E84BD937C84A16470FEAEDA7FC /* Pods-Components */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Components"; path = Pods_Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B04D00652178414274A7F4BB7778DA72 /* UIView+Spacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Spacing.swift"; path = "Declayout/Sources/UIView+Spacing.swift"; sourceTree = "<group>"; };
-		B2FD7E9758ECA6CED3C1E48392D2D6E9 /* Declayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Declayout-umbrella.h"; sourceTree = "<group>"; };
-		C8C4FD3BFA47089E911282672B87C341 /* UIView+Constraintable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Constraintable.swift"; path = "Declayout/Sources/UIView+Constraintable.swift"; sourceTree = "<group>"; };
+		B66EA57A44E2E46D4F9A796E9210F6F6 /* UIView+Spacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Spacing.swift"; path = "Declayout/Sources/UIView+Spacing.swift"; sourceTree = "<group>"; };
+		B87E3882B51B7B81157B2F5B86F95B1F /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		BF3FF7E3A02A06AA5506C93EC56F1DD5 /* Declayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Declayout.release.xcconfig; sourceTree = "<group>"; };
+		C4ED9DC2F02059F56D318C94DB9F0AA3 /* Declayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Declayout-dummy.m"; sourceTree = "<group>"; };
+		C72A280721251F73903BC2CCBDA155A9 /* UIView+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Center.swift"; path = "Declayout/Sources/UIView+Center.swift"; sourceTree = "<group>"; };
 		CC82B74E971B011AD009E13225DA4FA6 /* Pods-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Components.debug.xcconfig"; sourceTree = "<group>"; };
+		D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Toast-Swift"; path = Toast_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC49E17FD4BA7A24C1F02752B239EE59 /* Pods-Booking Virtual Card.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Booking Virtual Card.modulemap"; sourceTree = "<group>"; };
-		F1B8289B26B4391300E5E84A45ED4540 /* Declayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Declayout.modulemap; sourceTree = "<group>"; };
+		EEA4A75FCBEAA557D9727D6E73D571B9 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
 		F44A6C626856332FF11340A9C8438605 /* Pods-Components.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Components.release.xcconfig"; sourceTree = "<group>"; };
-		F4FD429E9026D8A37CDA128A67A8B973 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Declayout/Sources/Constraint.swift; sourceTree = "<group>"; };
-		F5D4D2783FF7D5D544629337FB1885E4 /* Declayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Declayout.release.xcconfig; sourceTree = "<group>"; };
-		F72BC8700CE1BCFE07810C73AF3BEAC9 /* UIView+Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Dimension.swift"; path = "Declayout/Sources/UIView+Dimension.swift"; sourceTree = "<group>"; };
 		FD3A3680D0F49BF940C403A39DE145F8 /* Pods-Booking Virtual Card-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Booking Virtual Card-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1B177B3CED45D6A79439209240E5D6E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97F5CEDBA74096DD37816D78207E894E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2062DA0A40637ABC53D12673DCF1A8F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B8447052A6492D2A9F3DAF70CC078C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27AE6978B7DEAB3C99D6DD07D4532395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E5507F92F0DF1DD5C3AB12E53F559F /* Foundation.framework in Frameworks */,
+				87E3B15B2AA7D226CB60059610C1241A /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39841708194FFFF91CCF613AAA347620 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,41 +140,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A45B13AF4E923C4E9016D3860854394 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C0E3434E936284FFD1D4F0DE963744F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F501BB63F3EC07D9524A426BC9665174 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E9C605160EDA11B4D18C3B1943E3502 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4868DAEF53AE1A2BA79FD0B31A3107F3 /* Products */ = {
+		0284914A5BB93D484973137C1708C3D9 /* Declayout */ = {
+			isa = PBXGroup;
+			children = (
+				896F1F9361DFA7B335F6E4AA7A09CF96 /* Constraint.swift */,
+				C72A280721251F73903BC2CCBDA155A9 /* UIView+Center.swift */,
+				8D0B582831480CBA5017179BFD83DE95 /* UIView+Constraintable.swift */,
+				562F58FEEE3A33C037DA632C49E01562 /* UIView+Dimension.swift */,
+				B66EA57A44E2E46D4F9A796E9210F6F6 /* UIView+Spacing.swift */,
+				A7A09BBD9A6BA0823447BE1344387A79 /* Support Files */,
+			);
+			name = Declayout;
+			path = Declayout;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D325A42620E7427FB70FB046C7B7B240 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C78F41D9213DB74FEB921C02C25A3C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				2AD7D8D0D74A60A8B9E806BF9889A4A7 /* Declayout */,
 				3D466F72AF7A9CC5705AE1DA08A8BB83 /* Pods-Booking Virtual Card */,
 				A96D96E84BD937C84A16470FEAEDA7FC /* Pods-Components */,
+				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast-Swift */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		31AAE8EBCDD2FF629EFF3118316CE900 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				0284914A5BB93D484973137C1708C3D9 /* Declayout */,
+				EF944F4EF83C5100D8DC37E921B546FA /* Toast-Swift */,
 			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		75A299264BFCBD8AEEE0B16DAE085586 /* Targets Support Files */ = {
@@ -130,14 +192,6 @@
 				909C75C74F0485F1A427CC2565A9FC86 /* Pods-Components */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		890B862A8F6DCE5D4A2FFD4E7CBB96DE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CF1E3B04B695E97EAB736C2DE2AC4A93 /* Declayout */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		909C75C74F0485F1A427CC2565A9FC86 /* Pods-Components */ = {
@@ -156,52 +210,39 @@
 			path = "Target Support Files/Pods-Components";
 			sourceTree = "<group>";
 		};
+		A7A09BBD9A6BA0823447BE1344387A79 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DEB342B0C2ED2ECAFCD165D89112A9B /* Declayout.modulemap */,
+				C4ED9DC2F02059F56D318C94DB9F0AA3 /* Declayout-dummy.m */,
+				0223AC0DC3385C2C673B57202AF980D9 /* Declayout-Info.plist */,
+				4E084174998C8A9E7CBE94F63D72F03D /* Declayout-prefix.pch */,
+				683B5D7E3C3A060374634A7ED6917285 /* Declayout-umbrella.h */,
+				7B2A025084054057249BDB591A8BE5A1 /* Declayout.debug.xcconfig */,
+				BF3FF7E3A02A06AA5506C93EC56F1DD5 /* Declayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Declayout";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				890B862A8F6DCE5D4A2FFD4E7CBB96DE /* Pods */,
-				4868DAEF53AE1A2BA79FD0B31A3107F3 /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				31AAE8EBCDD2FF629EFF3118316CE900 /* Pods */,
+				2C78F41D9213DB74FEB921C02C25A3C3 /* Products */,
 				75A299264BFCBD8AEEE0B16DAE085586 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		CF1E3B04B695E97EAB736C2DE2AC4A93 /* Declayout */ = {
+		D325A42620E7427FB70FB046C7B7B240 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F4FD429E9026D8A37CDA128A67A8B973 /* Constraint.swift */,
-				1DB7CCEF74307519A75B9274EF8484C2 /* UIView+Center.swift */,
-				C8C4FD3BFA47089E911282672B87C341 /* UIView+Constraintable.swift */,
-				F72BC8700CE1BCFE07810C73AF3BEAC9 /* UIView+Dimension.swift */,
-				B04D00652178414274A7F4BB7778DA72 /* UIView+Spacing.swift */,
-				DDDACB4E4CE54AEE6EC93A5375055FA7 /* Support Files */,
+				31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */,
+				2FEFE490E4A06D19E868B2B9014BB8BF /* QuartzCore.framework */,
 			);
-			name = Declayout;
-			path = Declayout;
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DDDACB4E4CE54AEE6EC93A5375055FA7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F1B8289B26B4391300E5E84A45ED4540 /* Declayout.modulemap */,
-				8603C5F67BE13A7528D39B19CC2F6A76 /* Declayout-dummy.m */,
-				6EA4B3CADEA7FC6F85B247023DA577A9 /* Declayout-Info.plist */,
-				9DFEDAF1598F9A959041E5D45A7B5F29 /* Declayout-prefix.pch */,
-				B2FD7E9758ECA6CED3C1E48392D2D6E9 /* Declayout-umbrella.h */,
-				3F40758B31CF72C09976BAB46572FC45 /* Declayout.debug.xcconfig */,
-				F5D4D2783FF7D5D544629337FB1885E4 /* Declayout.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Declayout";
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E9497EB18D225B6CC32E4353FD99F550 /* Pods-Booking Virtual Card */ = {
@@ -221,22 +262,55 @@
 			path = "Target Support Files/Pods-Booking Virtual Card";
 			sourceTree = "<group>";
 		};
+		EE53E9D4A880C98BA64F9C9852824E3D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AD7793370E3114A3F5178C6E6710921 /* Toast-Swift.modulemap */,
+				86C2849D8B67F6BEC130E94DA9128943 /* Toast-Swift-dummy.m */,
+				4E5A160C8A991C1B8ACDA3219BAF0ED8 /* Toast-Swift-Info.plist */,
+				B87E3882B51B7B81157B2F5B86F95B1F /* Toast-Swift-prefix.pch */,
+				EEA4A75FCBEAA557D9727D6E73D571B9 /* Toast-Swift-umbrella.h */,
+				18A47EB4A73B4C8BE3405A9DFCE38D0D /* Toast-Swift.debug.xcconfig */,
+				40582F36A877ACE641FE45A54FA55F58 /* Toast-Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Toast-Swift";
+			sourceTree = "<group>";
+		};
+		EF944F4EF83C5100D8DC37E921B546FA /* Toast-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				183BA672AE01798B48839A3C994AE368 /* Toast.swift */,
+				EE53E9D4A880C98BA64F9C9852824E3D /* Support Files */,
+			);
+			name = "Toast-Swift";
+			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		012CE41A1019689F8E4A802A0193F4D2 /* Headers */ = {
+		63D019064C2255A3D74C25BDF1937802 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B41D869276740A0E7839574DF7003BB /* Pods-Components-umbrella.h in Headers */,
+				BF20C741EBB18F936CA31F2E41DC9F23 /* Toast-Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14A9CE1655E0210B190FD8B9F251AAA0 /* Headers */ = {
+		7EE3417241EDE5E7239D5FF55582255B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6872BA2DC3B8D9FB6FD1F26FB34487DF /* Pods-Booking Virtual Card-umbrella.h in Headers */,
+				3D0B63300C72383E50AA8D786CB6C706 /* Pods-Booking Virtual Card-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF2FD73874D15A7FD565FE4DDED709D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7501BAFD072FAFAF1C10672EB61BDC /* Pods-Components-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,19 +343,38 @@
 			productReference = 2AD7D8D0D74A60A8B9E806BF9889A4A7 /* Declayout */;
 			productType = "com.apple.product-type.framework";
 		};
-		C0A5A8B3DA966FCBA2CEB5A4C3D9F6B4 /* Pods-Booking Virtual Card */ = {
+		B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B4FE15E8EEC097B371AFD51C2633007 /* Build configuration list for PBXNativeTarget "Pods-Booking Virtual Card" */;
+			buildConfigurationList = 3393B836BCDFD5292B077E63A26DC97F /* Build configuration list for PBXNativeTarget "Toast-Swift" */;
 			buildPhases = (
-				14A9CE1655E0210B190FD8B9F251AAA0 /* Headers */,
-				FA9345884BA54DD5E6963C2763971B93 /* Sources */,
-				F501BB63F3EC07D9524A426BC9665174 /* Frameworks */,
-				AB24A5E5911364BCBF5B97B98A690A14 /* Resources */,
+				63D019064C2255A3D74C25BDF1937802 /* Headers */,
+				C576B265A93E25312929172E0AB5B460 /* Sources */,
+				27AE6978B7DEAB3C99D6DD07D4532395 /* Frameworks */,
+				39537AB4608D9B5FE694169E21AD9F19 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				37B4DB69826AD14F4DA73B64AFADA502 /* PBXTargetDependency */,
+			);
+			name = "Toast-Swift";
+			productName = Toast_Swift;
+			productReference = D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast-Swift */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0A5A8B3DA966FCBA2CEB5A4C3D9F6B4 /* Pods-Booking Virtual Card */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0F752B022C73E6B85D89FCB87B7A64 /* Build configuration list for PBXNativeTarget "Pods-Booking Virtual Card" */;
+			buildPhases = (
+				7EE3417241EDE5E7239D5FF55582255B /* Headers */,
+				C9C842EEB70A110ED1D154CB17C5065A /* Sources */,
+				2062DA0A40637ABC53D12673DCF1A8F6 /* Frameworks */,
+				22D49831C03EE8D886E0E976A7F48F10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D91B21B8A511A5E4E31BA21CA48B08FD /* PBXTargetDependency */,
+				0CFFD57BCB3C339022D8F6A0BA45CAF8 /* PBXTargetDependency */,
 			);
 			name = "Pods-Booking Virtual Card";
 			productName = Pods_Booking_Virtual_Card;
@@ -290,17 +383,18 @@
 		};
 		ED9F0CDD7B3E93BC748B326474638391 /* Pods-Components */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6C4188B3B0B9133CEBBB781B0F6C8AB /* Build configuration list for PBXNativeTarget "Pods-Components" */;
+			buildConfigurationList = AD953283D45D1C8168DC5ABFDDE49B87 /* Build configuration list for PBXNativeTarget "Pods-Components" */;
 			buildPhases = (
-				012CE41A1019689F8E4A802A0193F4D2 /* Headers */,
-				ACE4413D291C9652605597A8DC79341B /* Sources */,
-				9A45B13AF4E923C4E9016D3860854394 /* Frameworks */,
-				4A0378CBF32BBEFF3F21DE50432AE095 /* Resources */,
+				ACF2FD73874D15A7FD565FE4DDED709D /* Headers */,
+				95F1D18C098E0BD11A8DC42A743D6AEC /* Sources */,
+				1B177B3CED45D6A79439209240E5D6E6 /* Frameworks */,
+				B1DD6A68C4E369DDF177619522EF8DEA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CBAA0C1E3D3948A1C97849BDD76A1D40 /* PBXTargetDependency */,
+				FADCDC9EB4E95E66049A9632CD59ED45 /* PBXTargetDependency */,
+				76CD25F7D53EDFC37C59AA02633AD1BC /* PBXTargetDependency */,
 			);
 			name = "Pods-Components";
 			productName = Pods_Components;
@@ -325,18 +419,26 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 4868DAEF53AE1A2BA79FD0B31A3107F3 /* Products */;
+			productRefGroup = 2C78F41D9213DB74FEB921C02C25A3C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				22569AF7E17069A0364671B0FEAA5CCC /* Declayout */,
 				C0A5A8B3DA966FCBA2CEB5A4C3D9F6B4 /* Pods-Booking Virtual Card */,
 				ED9F0CDD7B3E93BC748B326474638391 /* Pods-Components */,
+				B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		22D49831C03EE8D886E0E976A7F48F10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34DCCE031737C06B398F3266732A5129 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,14 +446,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A0378CBF32BBEFF3F21DE50432AE095 /* Resources */ = {
+		39537AB4608D9B5FE694169E21AD9F19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB24A5E5911364BCBF5B97B98A690A14 /* Resources */ = {
+		B1DD6A68C4E369DDF177619522EF8DEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,11 +463,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ACE4413D291C9652605597A8DC79341B /* Sources */ = {
+		95F1D18C098E0BD11A8DC42A743D6AEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B764D5FF532DF4C98C92095B404DCC0 /* Pods-Components-dummy.m in Sources */,
+				8A2486C7A3FBC7B19189E354E9DBDB2B /* Pods-Components-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C576B265A93E25312929172E0AB5B460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE29563450C7ED7B9BEFD4F8C3788CA /* Toast.swift in Sources */,
+				6DFA70326D4C540DC43BD455F5A4A658 /* Toast-Swift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C842EEB70A110ED1D154CB17C5065A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA6BCE7489C31CE36A3B1A138FB298A /* Pods-Booking Virtual Card-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,35 +501,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA9345884BA54DD5E6963C2763971B93 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4E2D65921A62D4A705E67FE61011FB5 /* Pods-Booking Virtual Card-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		37B4DB69826AD14F4DA73B64AFADA502 /* PBXTargetDependency */ = {
+		0CFFD57BCB3C339022D8F6A0BA45CAF8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Declayout;
-			target = 22569AF7E17069A0364671B0FEAA5CCC /* Declayout */;
-			targetProxy = 748BD9C84482EA3F420C24A04B921973 /* PBXContainerItemProxy */;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			targetProxy = A1114B5965BD44DDBA3EDEB294063ED0 /* PBXContainerItemProxy */;
 		};
-		CBAA0C1E3D3948A1C97849BDD76A1D40 /* PBXTargetDependency */ = {
+		76CD25F7D53EDFC37C59AA02633AD1BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			targetProxy = 6366952C3F314177EDCFBC63B49CC0F6 /* PBXContainerItemProxy */;
+		};
+		D91B21B8A511A5E4E31BA21CA48B08FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Declayout;
 			target = 22569AF7E17069A0364671B0FEAA5CCC /* Declayout */;
-			targetProxy = 1FCD54CC6B836911E3AF9B3584510AE7 /* PBXContainerItemProxy */;
+			targetProxy = F48D7D4068E45826287D694611D6C89A /* PBXContainerItemProxy */;
+		};
+		FADCDC9EB4E95E66049A9632CD59ED45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Declayout;
+			target = 22569AF7E17069A0364671B0FEAA5CCC /* Declayout */;
+			targetProxy = EC3DD8D60D2FC92733AC2FC2B762865A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		017A137789EFF45D33F4A889DA53CF62 /* Release */ = {
+		038B7FF2D31694FC39CDCA17D80D0539 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 176B094CF99DE4093AE07779359942C4 /* Pods-Booking Virtual Card.release.xcconfig */;
+			baseConfigurationReference = 8AC38EEC0BE487B51777FF82D7955435 /* Pods-Booking Virtual Card.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -440,13 +563,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		1303127089AC61A419E9427862C408AE /* Release */ = {
+		17AB980EEDB5C39FA600F14E5158899B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F44A6C626856332FF11340A9C8438605 /* Pods-Components.release.xcconfig */;
 			buildSettings = {
@@ -484,7 +606,41 @@
 			};
 			name = Release;
 		};
-		8DC1C9E824592A3BD27D3C2F390E7EE3 /* Debug */ = {
+		1F6D3DD34E8A819816BB3E88E22EDACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18A47EB4A73B4C8BE3405A9DFCE38D0D /* Toast-Swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Toast_Swift;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80796A103F9B1137F62D31BF925EC648 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC82B74E971B011AD009E13225DA4FA6 /* Pods-Components.debug.xcconfig */;
 			buildSettings = {
@@ -649,46 +805,9 @@
 			};
 			name = Release;
 		};
-		BCB64D3EC12D857CC12BC6641D7DCCD5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AC38EEC0BE487B51777FF82D7955435 /* Pods-Booking Virtual Card.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		BF5EAFD736749E5CC01ABBE18EEA32C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5D4D2783FF7D5D544629337FB1885E4 /* Declayout.release.xcconfig */;
+			baseConfigurationReference = BF3FF7E3A02A06AA5506C93EC56F1DD5 /* Declayout.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -722,9 +841,44 @@
 			};
 			name = Release;
 		};
+		DD076AFEEE0A686B597DD62BCA7E46CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40582F36A877ACE641FE45A54FA55F58 /* Toast-Swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Toast-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Toast_Swift;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E6512A4359E6C16966D607176D70CEA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F40758B31CF72C09976BAB46572FC45 /* Declayout.debug.xcconfig */;
+			baseConfigurationReference = 7B2A025084054057249BDB591A8BE5A1 /* Declayout.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -757,9 +911,56 @@
 			};
 			name = Debug;
 		};
+		FAC90670C686C90D95A6A18583B7ECC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176B094CF99DE4093AE07779359942C4 /* Pods-Booking Virtual Card.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Booking Virtual Card/Pods-Booking Virtual Card.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3393B836BCDFD5292B077E63A26DC97F /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6D3DD34E8A819816BB3E88E22EDACC /* Debug */,
+				DD076AFEEE0A686B597DD62BCA7E46CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -778,20 +979,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B4FE15E8EEC097B371AFD51C2633007 /* Build configuration list for PBXNativeTarget "Pods-Booking Virtual Card" */ = {
+		AD953283D45D1C8168DC5ABFDDE49B87 /* Build configuration list for PBXNativeTarget "Pods-Components" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BCB64D3EC12D857CC12BC6641D7DCCD5 /* Debug */,
-				017A137789EFF45D33F4A889DA53CF62 /* Release */,
+				80796A103F9B1137F62D31BF925EC648 /* Debug */,
+				17AB980EEDB5C39FA600F14E5158899B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6C4188B3B0B9133CEBBB781B0F6C8AB /* Build configuration list for PBXNativeTarget "Pods-Components" */ = {
+		AF0F752B022C73E6B85D89FCB87B7A64 /* Build configuration list for PBXNativeTarget "Pods-Booking Virtual Card" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DC1C9E824592A3BD27D3C2F390E7EE3 /* Debug */,
-				1303127089AC61A419E9427862C408AE /* Release */,
+				038B7FF2D31694FC39CDCA17D80D0539 /* Debug */,
+				FAC90670C686C90D95A6A18583B7ECC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

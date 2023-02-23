@@ -103,7 +103,6 @@ final class SelectDateView: UIView {
     
     private func configureDatePicker() {
         startDatePicker.datePickerMode = .date
-        startDatePicker.maximumDate = Date()
         startDatePicker.addTarget(self, action: #selector(startDatePickerChanged(picker:)), for: .valueChanged)
         
         if #available(iOS 14.0, *) {
@@ -114,7 +113,7 @@ final class SelectDateView: UIView {
         
         endDatePicker.datePickerMode = .date
         endDatePicker.addTarget(self, action: #selector(endDatePickerChanged(picker:)), for: .valueChanged)
-        endDatePicker.setDate(Date(), unit: .day, deltaMinimum: -30, deltaMaximum: 1, animated: true)
+        endDatePicker.minimumDate = Date()
         
         if #available(iOS 14.0, *) {
             endDatePicker.preferredDatePickerStyle = .inline

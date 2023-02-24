@@ -1,5 +1,6 @@
 import Declayout
 import Components
+import UIKit
 
 final class VirtualCardViewController: UIViewController {
     
@@ -47,18 +48,25 @@ final class VirtualCardViewController: UIViewController {
         $0.isUserInteractionEnabled = true
     }
     
-    private lazy var virtualCardView = VirtualCardView()
     private lazy var selectDateView = SelectDateView.make {
         $0.isUserInteractionEnabled = true
     }
     
+    private lazy var locationListView = UITableView.make {
+        $0.delegate = self
+        $0.dataSource = self
+        $0.register(ListLocationCell.self, forCellReuseIdentifier: "ListLocationCell")
+        $0.separatorStyle = .none
+        $0.backgroundColor = .clear
+    }
+    
+    private lazy var virtualCardView = VirtualCardView()
     private lazy var locationListInputView = LocationListInputView()
-    private lazy var locationListView = LocationListView()
     private lazy var submitedView = SubmitedView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel?.viewDidLoad()
+//        viewModel?.viewDidLoad()
         subViews()
         defaultButton()
         configureButton()
@@ -73,10 +81,10 @@ final class VirtualCardViewController: UIViewController {
             self.locationListInputView.listLocation = data
         }
         
-        self.viewModel?.baseViewState.observe(on: self) { [weak self] view in
-            guard let self = self, let view = view else { return }
-            self.handleViewState(with: view)
-        }
+//        self.viewModel?.baseViewState.observe(on: self) { [weak self] view in
+//            guard let self = self, let view = view else { return }
+//            self.handleViewState(with: view)
+//        }
         
         self.viewModel?.error.observe(on: self) { [weak self] error in
             guard let error = error, let self = self else { return }
@@ -149,6 +157,10 @@ final class VirtualCardViewController: UIViewController {
         self.locationListInputView.selectCallBackToast = {
             self.locationIsSelected()
         }
+        
+        self.selectDateView.callBackToast = { message in
+            self.showError(with: message)
+        }
     }
     
     @objc private func didSelectBooking() {
@@ -184,3 +196,19 @@ final class VirtualCardViewController: UIViewController {
     }
 }
 
+
+
+extension VirtualCardViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let row = viewModel?.listPokemon.value.count
+        return row ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListLocationCell", for: indexPath) as! ListLocationCell
+        return cell
+    }
+    
+    
+}

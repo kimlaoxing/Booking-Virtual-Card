@@ -7,7 +7,7 @@ protocol VirtualCardViewModelInput {
 }
 
 protocol VirtualCardViewModelOutput {
-    var listPokemon: Observable<[ListPokemonResult]> { get }
+    var listPokemon: Observable<[ListAreaResult]> { get }
     var baseViewState: Observable<BaseViewState?> { get }
     var error: Observable<String?> { get }
 }
@@ -17,10 +17,10 @@ protocol VirtualCardViewModel: VirtualCardViewModelInput, VirtualCardViewModelOu
 final class DefaultVirtualCardViewModel: VirtualCardViewModel {
     let baseViewState: Observable<BaseViewState?> = Observable(.loading)
     let error: Observable<String?> = Observable("")
-    let listPokemon: Observable<[ListPokemonResult]> = Observable([])
-    let useCase: ListPokemonUseCaseProtocol
+    let listPokemon: Observable<[ListAreaResult]> = Observable([])
+    let useCase: VirtualCardUseCaseProtocol
     
-    init(useCase: ListPokemonUseCaseProtocol) {
+    init(useCase: VirtualCardUseCaseProtocol) {
         self.useCase = useCase
     }
     
@@ -32,7 +32,7 @@ final class DefaultVirtualCardViewModel: VirtualCardViewModel {
 extension DefaultVirtualCardViewModel {
     func getListPokemon() {
         self.baseViewState.value = .loading
-        self.useCase.getListPokemon(with: 20) { [weak self] data in
+        self.useCase.getListArea() { [weak self] data in
             switch data {
             case .success(let data):
                 self?.baseViewState.value = .normal

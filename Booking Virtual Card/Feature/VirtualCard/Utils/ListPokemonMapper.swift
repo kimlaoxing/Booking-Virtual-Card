@@ -1,11 +1,13 @@
 import Foundation
 
-final class ListPokemonMapper {
-    static func listPokemonMapper(result: [ListPokemonResponse.Result]) -> [ListPokemonResult] {
-        return result.map { data in
-            return ListPokemonResult(
-                name: data.name ?? ""
-            )
+final class ListAreaMapper {
+    static func listAreaMapper(response: [AreaForSTIDResponse]) -> [ListAreaResult] {
+        return response.map { data in
+            return ListAreaResult(id: data.id ?? "",
+                                  areaName: data.areaName ?? "",
+                                  floorName: data.floorName ?? "",
+                                  buildingName: data.buildingName ?? "",
+                                  location: data.location ?? "")
         }
     }
 }

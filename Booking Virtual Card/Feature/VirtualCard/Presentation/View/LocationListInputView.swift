@@ -6,7 +6,7 @@ final class LocationListInputView: UIView {
     private lazy var firstLocationListView = LocationListView()
     private lazy var secondLocationListView = LocationListView()
     private var pickerView = UIPickerView()
-    var listLocation: [ListPokemonResult] = []
+    var listLocation: [ListAreaResult] = []
     var selectCallBackToast: (() -> Void)?
     
     private lazy var container = UIStackView.make {
@@ -115,20 +115,20 @@ extension LocationListInputView: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return self.listLocation[row].name
+        return self.listLocation[row].location
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if firstLocationListView.isFilled {
-            if firstLocationListView.valueLabel == self.listLocation[row].name {
+            if firstLocationListView.valueLabel == self.listLocation[row].location {
                 self.selectCallBackToast?()
             } else {
-                self.secondLocationListView.setContent(with: self.listLocation[row].name)
+                self.secondLocationListView.setContent(with: self.listLocation[row].location ?? "")
                 self.secondLocationListView.isHidden = false
                 self.emptyData.isHidden = true
             }
         } else {
-            self.firstLocationListView.setContent(with: self.listLocation[row].name)
+            self.firstLocationListView.setContent(with: self.listLocation[row].location ?? "")
             self.firstLocationListView.isHidden = false
             self.emptyData.isHidden = true
         }

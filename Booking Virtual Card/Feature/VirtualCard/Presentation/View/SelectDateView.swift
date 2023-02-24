@@ -6,6 +6,7 @@ final class SelectDateView: UIView {
     private let startDatePicker = UIDatePicker()
     private let endDatePicker = UIDatePicker()
     private let formPickerView = UIPickerView()
+    var callBackToast: ((String) -> Void)?
     
     private lazy var container = UIStackView.make {
         $0.layer.cornerRadius = 15
@@ -54,6 +55,7 @@ final class SelectDateView: UIView {
         $0.contentVerticalAlignment = UIControl.ContentVerticalAlignment.center
         $0.delegate = self
         $0.backgroundColor = .lightGray
+        $0.text = ""
     }
     
     private lazy var endDate = UITextField.make {
@@ -73,8 +75,8 @@ final class SelectDateView: UIView {
         super.init(frame: frame)
         subViews()
         creatDoneButtonForStartDate()
-        creatDoneButtonForEndDate()
-        configureDatePicker()
+        configureEndDateDatePicker()
+        configureStartDateDatePicker()
     }
     
     required init?(coder: NSCoder) {
@@ -99,7 +101,7 @@ final class SelectDateView: UIView {
         ])
     }
     
-    private func configureDatePicker() {
+    private func configureStartDateDatePicker() {
         startDatePicker.datePickerMode = .date
         startDatePicker.addTarget(self, action: #selector(startDatePickerChanged(picker:)), for: .valueChanged)
         
@@ -108,16 +110,25 @@ final class SelectDateView: UIView {
         }
         startDate.inputView = startDatePicker
         startDate.addTarget(self, action: #selector(onStartDateDidBegin(_:)), for: .editingDidBegin)
-        
-        endDatePicker.datePickerMode = .date
-        endDatePicker.addTarget(self, action: #selector(endDatePickerChanged(picker:)), for: .valueChanged)
-        endDatePicker.minimumDate = Date()
-        
-        if #available(iOS 14.0, *) {
-            endDatePicker.preferredDatePickerStyle = .inline
+    }
+    
+    private func configureEndDateDatePicker() {
+        if let text = startDate.text {
+            if text.isEmpty {
+                self.callBackToast?("Please Select Start Date First")
+            } else {
+                endDate.inputView = endDatePicker
+                endDate.addTarget(self, action: #selector(onEndDateDidBegin(_:)), for: .editingDidBegin)
+                endDatePicker.datePickerMode = .date
+                endDatePicker.addTarget(self, action: #selector(endDatePickerChanged(picker:)), for: .valueChanged)
+                endDatePicker.minimumDate = self.startDatePicker.date
+                
+                if #available(iOS 14.0, *) {
+                    endDatePicker.preferredDatePickerStyle = .inline
+                }
+                creatDoneButtonForEndDate()
+            }
         }
-        endDate.inputView = endDatePicker
-        endDate.addTarget(self, action: #selector(onEndDateDidBegin(_:)), for: .editingDidBegin)
     }
     
     private func creatDoneButtonForStartDate() {
@@ -138,6 +149,7 @@ final class SelectDateView: UIView {
     
     @objc func doneStartDate() {
         startDate.text = self.startDatePicker.date.toString(with: .reverseServerDate)
+        configureEndDateDatePicker()
         self.endEditing(true)
     }
     
@@ -148,13 +160,14 @@ final class SelectDateView: UIView {
     
     @objc func startDatePickerChanged(picker: UIDatePicker) {
         startDate.text = picker.date.toString(with: .reverseServerDate)
+        configureEndDateDatePicker()
     }
     
     @objc func endDatePickerChanged(picker: UIDatePicker) {
         endDate.text = picker.date.toString(with: .reverseServerDate)
     }
     
-    @objc private func onStartDateDidBegin(_ textfield: UITextField){
+    @objc private func onStartDateDidBegin(_ textfield: UITextField) {
         if let text = textfield.text {
             if text.isEmpty{
                 startDatePicker.setDate(Date(), animated: true)
@@ -164,13 +177,14 @@ final class SelectDateView: UIView {
         }
     }
     
-    @objc private func onEndDateDidBegin(_ textfield: UITextField){
-        if let text = textfield.text {
-            if text.isEmpty{
+    @objc private func onEndDateDidBegin(_ textfield: UITextField) {
+        if let text = startDate.text {
+            if text.isEmpty {
+                self.callBackToast?("Please Select Start Date First")
+            } else {
                 endDatePicker.setDate(Date(), animated: true)
                 endDate.text = Date().toString(with: .reverseServerDate)
             }
-            endDatePicker.setDate(Date(), animated: true)
         }
     }
 }
@@ -178,6 +192,19 @@ final class SelectDateView: UIView {
 
 extension SelectDateView: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        switch textField {
+        case endDate:
+            if let text = startDate.text {
+                if text.isEmpty {
+                    self.callBackToast?("Please Select Start Date First")
+                }
+            }
+        case startDate:
+            endDate.text = ""
+        default:
+            break
+        }
+        
         return true
     }
     

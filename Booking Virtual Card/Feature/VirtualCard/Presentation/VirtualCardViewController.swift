@@ -6,6 +6,10 @@ final class VirtualCardViewController: UIViewController {
     
     var viewModel: VirtualCardViewModel?
     var selectedLocation: [String] = []
+    private var idNo: String = ""
+    private var startDate: String = ""
+    private var endDate: String = ""
+    private var areaIds: [String] = [""]
     
     private lazy var vStack = UIStackView.make {
         $0.axis = .vertical
@@ -15,8 +19,6 @@ final class VirtualCardViewController: UIViewController {
         $0.backgroundColor = .white
         $0.isUserInteractionEnabled = true
     }
-    
-    private lazy var emptyDataView = EmptyDataView()
     
     private lazy var container = ScrollViewContainer.make {
         $0.setSpacingBetweenItems(to: Padding.double * 2)
@@ -70,6 +72,7 @@ final class VirtualCardViewController: UIViewController {
     private lazy var virtualCardView = VirtualCardView()
     private lazy var locationListInputView = LocationListInputView()
     private lazy var submitedView = SubmitedView()
+    private lazy var emptyDataView = EmptyDataView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +84,7 @@ final class VirtualCardViewController: UIViewController {
         handleNotification()
         bind()
         configureTableView()
+        handleCallBackCreatEventParams()
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -103,10 +107,13 @@ final class VirtualCardViewController: UIViewController {
     }
     
     private func bind() {
-//        self.viewModel?.listArea.observe(on: self) { [weak self] data in
-//            guard let self = self else { return }
+        self.viewModel?.listArea.observe(on: self) { [weak self] data in
+            guard let self = self else { return }
 //            self.locationListInputView.listLocation = data
-//        }
+            for id in data {
+                self.areaIds.append(id.id)
+            }
+        }
         
 //        self.viewModel?.baseViewState.observe(on: self) { [weak self] view in
 //            guard let self = self, let view = view else { return }
@@ -118,6 +125,11 @@ final class VirtualCardViewController: UIViewController {
             if error != "" {
                 self.showError(with: error)
             }
+        }
+        
+        self.viewModel?.creatEventState.observe(on: self) { [weak self] state in
+            guard let state = state, let self = self else { return }
+            self.handleCreatEventState(with: state)
         }
     }
     
@@ -235,12 +247,7 @@ final class VirtualCardViewController: UIViewController {
     }
     
     @objc private func didSelectSubmit() {
-        submitButtonStack.isHidden = true
-        virtualCardView.isHidden = true
-        selectDateView.isHidden = true
-        locationListInputView.isHidden = true
-        locationListTableView.isHidden = true
-        submitedView.isHidden = false
+        self.viewModel?.postCreatEvent(with: self.idNo, startDate: self.startDate, endDate: self.endDate, areaIds: self.areaIds)
     }
     
     @objc func backgroundTap() {
@@ -254,6 +261,32 @@ final class VirtualCardViewController: UIViewController {
         emptyViewConfigure()
     }
     
+    private func handleCallBackCreatEventParams() {
+        self.selectDateView.callBackStartDate = { startDate in 
+            self.startDate = startDate
+        }
+        
+        self.selectDateView.callBackEndDate = { endDate in
+            self.endDate = endDate
+        }
+    }
+    
+    private func handleCreatEventState(with state: CreatEventState) {
+        switch state {
+        case .success:
+            submitButtonStack.isHidden = true
+            virtualCardView.isHidden = true
+            selectDateView.isHidden = true
+            locationListInputView.isHidden = true
+            locationListTableView.isHidden = true
+            emptyDataView.isHidden = true
+            submitedView.isHidden = false
+        case .failure:
+            self.showError(with: "Please Fill Start Date, EndDate, and Location")
+        case .idle:
+            break
+        }
+    }
     private func emptyViewConfigure() {
         if self.selectedLocation.count > 0 {
             emptyDataView.isHidden = true

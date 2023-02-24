@@ -2,7 +2,7 @@ public enum DateFormat: String {
     case serverDate = "yyyy-MM-dd"
     case serverDateWithTime = "yyyy-MM-dd HH:mm:ss"
     case dayMonthYear = "dd MMMM yyyy"
-    case dayMonthYearWithTime = "dd MMMM yyyy, HH:mm"
+    case dayMonthYearWithTime = "dd-MM-yyyy HH:mm"
     case hourMinute = "HH:mm"
     case hourMinuteSecond = "HH:mm:ss"
     case serverDateWithTimeAndT = "yyyy-MM-dd'T'HH:mm:ss"

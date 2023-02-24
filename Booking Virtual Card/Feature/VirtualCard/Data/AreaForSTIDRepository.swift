@@ -2,6 +2,11 @@ import Foundation
 
 protocol AreaForSTIDRepositoryProtocol {
     func getListArea(completion: @escaping (Result<[ListAreaResult], Error>) -> Void)
+    func postCreatEvent(with idno: String,
+                        startDate: String,
+                        endDate: String,
+                        areaIds: [String],
+                        completion: @escaping (Result<Data, Error>) -> Void)
 }
 
 final class AreaForSTIDRepository: NSObject {
@@ -19,6 +24,17 @@ final class AreaForSTIDRepository: NSObject {
 }
 
 extension AreaForSTIDRepository: AreaForSTIDRepositoryProtocol {
+    func postCreatEvent(with idno: String, startDate: String, endDate: String, areaIds: [String], completion: @escaping (Result<Data, Error>) -> Void) {
+        self.remote.postCreatEvent(with: idno, startDate: startDate, endDate: endDate, areaIds: areaIds) { data in
+            switch data {
+            case .failure(let error):
+                completion(.failure(error))
+            case .success(let data):
+                completion(.success(data))
+            }
+        }
+    }
+    
     func getListArea(completion: @escaping (Result<[ListAreaResult], Error>) -> Void) {
         self.remote.getListArea() { data in
             switch data {

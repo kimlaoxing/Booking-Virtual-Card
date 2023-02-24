@@ -7,6 +7,8 @@ final class SelectDateView: UIView {
     private let endDatePicker = UIDatePicker()
     private let formPickerView = UIPickerView()
     var callBackToast: ((String) -> Void)?
+    var callBackStartDate: ((String) -> Void)?
+    var callBackEndDate: ((String) -> Void)?
     
     private lazy var container = UIStackView.make {
         $0.layer.cornerRadius = 15
@@ -149,22 +151,26 @@ final class SelectDateView: UIView {
     
     @objc func doneStartDate() {
         startDate.text = self.startDatePicker.date.toString(with: .reverseServerDate)
+        self.callBackStartDate?(self.startDatePicker.date.toString(with: .dayMonthYearWithTime))
         configureEndDateDatePicker()
         self.endEditing(true)
     }
     
     @objc func doneEndDate() {
         endDate.text = self.endDatePicker.date.toString(with: .reverseServerDate)
+        self.callBackEndDate?(self.endDatePicker.date.toString(with: .dayMonthYearWithTime))
         self.endEditing(true)
     }
     
     @objc func startDatePickerChanged(picker: UIDatePicker) {
         startDate.text = picker.date.toString(with: .reverseServerDate)
+        self.callBackStartDate?(self.startDatePicker.date.toString(with: .dayMonthYearWithTime))
         configureEndDateDatePicker()
     }
     
     @objc func endDatePickerChanged(picker: UIDatePicker) {
         endDate.text = picker.date.toString(with: .reverseServerDate)
+        self.callBackEndDate?(self.endDatePicker.date.toString(with: .dayMonthYearWithTime))
     }
     
     @objc private func onStartDateDidBegin(_ textfield: UITextField) {

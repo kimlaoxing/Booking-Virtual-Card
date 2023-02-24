@@ -3,11 +3,11 @@ import Components
 
 final class LocationListInputView: UIView {
     
-    private lazy var firstLocationListView = LocationListView()
-    private lazy var secondLocationListView = LocationListView()
     private var pickerView = UIPickerView()
-    var listLocation: [ListAreaResult] = []
+//    var listLocation: [ListAreaResult] = []
+    var listLocation: [String] = ["ON Space, GF, ME COMM", "ON Space, L5, ME COMM"]
     var selectCallBackToast: (() -> Void)?
+    var callBackSeletedLocation: ((String) -> Void)?
     
     private lazy var container = UIStackView.make {
         $0.layer.cornerRadius = 15
@@ -15,12 +15,6 @@ final class LocationListInputView: UIView {
         $0.edges(to: self)
         $0.axis = .vertical
         $0.spacing = Padding.reguler
-    }
-    
-    private lazy var locationListStack = UIStackView.make {
-        $0.axis = .vertical
-        $0.horizontalPadding(to: container, Padding.double)
-        $0.spacing = Padding.half
     }
     
     private lazy var datePickerStack = UIStackView.make {
@@ -42,19 +36,10 @@ final class LocationListInputView: UIView {
         $0.backgroundColor = .lightGray
     }
     
-    private lazy var emptyData = UILabel.make {
-        $0.text = "No Data"
-        $0.font = .systemFont(ofSize: 12, weight: .semibold)
-        $0.textAlignment = .center
-        $0.textColor = .lightGray
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configurePickerView()
         subViews()
-        configureButton()
-        defaultLocationList()
     }
     
     required init?(coder: NSCoder) {
@@ -67,11 +52,6 @@ final class LocationListInputView: UIView {
             container.addArrangedSubviews([
                 datePickerStack.addArrangedSubviews([
                     locationTextField
-                ]),
-                locationListStack.addArrangedSubviews([
-                    firstLocationListView,
-                    secondLocationListView,
-                    emptyData
                 ])
             ])
         ])
@@ -81,27 +61,6 @@ final class LocationListInputView: UIView {
         locationTextField.inputView = pickerView
         pickerView.delegate = self
         pickerView.dataSource = self
-    }
-    
-    private func defaultLocationList() {
-        firstLocationListView.isHidden = true
-        secondLocationListView.isHidden = true
-    }
-    
-    private func configureButton() {
-        firstLocationListView.closeButtonCallBack = {
-            self.firstLocationListView.isHidden = true
-            if self.secondLocationListView.isHidden == true {
-                self.emptyData.isHidden = false
-            }
-        }
-        
-        secondLocationListView.closeButtonCallBack = {
-            self.secondLocationListView.isHidden = true
-            if self.firstLocationListView.isHidden == true {
-                self.emptyData.isHidden = false
-            }
-        }
     }
 }
 
@@ -115,23 +74,24 @@ extension LocationListInputView: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return self.listLocation[row].location
+        return self.listLocation[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if firstLocationListView.isFilled {
-            if firstLocationListView.valueLabel == self.listLocation[row].location {
-                self.selectCallBackToast?()
-            } else {
-                self.secondLocationListView.setContent(with: self.listLocation[row].location ?? "")
-                self.secondLocationListView.isHidden = false
-                self.emptyData.isHidden = true
-            }
-        } else {
-            self.firstLocationListView.setContent(with: self.listLocation[row].location ?? "")
-            self.firstLocationListView.isHidden = false
-            self.emptyData.isHidden = true
-        }
+        self.callBackSeletedLocation?(self.listLocation[row])
+//        if firstLocationListView.isFilled {
+//            if firstLocationListView.valueLabel == self.listLocation[row].location {
+//                self.selectCallBackToast?()
+//            } else {
+//                self.secondLocationListView.setContent(with: self.listLocation[row].location ?? "")
+//                self.secondLocationListView.isHidden = false
+//                self.emptyData.isHidden = true
+//            }
+//        } else {
+//            self.firstLocationListView.setContent(with: self.listLocation[row].location ?? "")
+//            self.firstLocationListView.isHidden = false
+//            self.emptyData.isHidden = true
+//        }
         self.endEditing(true)
     }
 }

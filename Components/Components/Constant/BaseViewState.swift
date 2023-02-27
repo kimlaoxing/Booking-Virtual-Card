@@ -5,9 +5,3 @@ public enum BaseViewState {
     case normal
     case empty
 }
-
-public enum CreatEventState {
-    case success
-    case failure
-    case idle
-}

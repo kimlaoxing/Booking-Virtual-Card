@@ -23,6 +23,7 @@
 		EAA08BDD29A76F50002FD929 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BDC29A76F50002FD929 /* Observable.swift */; };
 		EAA08BDF29A76F66002FD929 /* BaseViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BDE29A76F66002FD929 /* BaseViewState.swift */; };
 		EAF51DD329A8907400BF70A4 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF51DD229A8907400BF70A4 /* TableView.swift */; };
+		EAF51DD929A8C0BD00BF70A4 /* CreatEventState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF51DD829A8C0BD00BF70A4 /* CreatEventState.swift */; };
 		EAFD5F3529A6000F0084CD5D /* UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD5F3429A6000F0084CD5D /* UIDatePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		EAA08BDC29A76F50002FD929 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		EAA08BDE29A76F66002FD929 /* BaseViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewState.swift; sourceTree = "<group>"; };
 		EAF51DD229A8907400BF70A4 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		EAF51DD829A8C0BD00BF70A4 /* CreatEventState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatEventState.swift; sourceTree = "<group>"; };
 		EAFD5F3429A6000F0084CD5D /* UIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				EAA08BCE29A7694D002FD929 /* APIService.swift */,
 				EAA08BDC29A76F50002FD929 /* Observable.swift */,
 				EAA08BDE29A76F66002FD929 /* BaseViewState.swift */,
+				EAF51DD829A8C0BD00BF70A4 /* CreatEventState.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				EAA08BDD29A76F50002FD929 /* Observable.swift in Sources */,
 				EAF51DD329A8907400BF70A4 /* TableView.swift in Sources */,
+				EAF51DD929A8C0BD00BF70A4 /* CreatEventState.swift in Sources */,
 				EA02C47C29A4781600EB3125 /* UIView.swift in Sources */,
 				EA02C47F29A4784600EB3125 /* RoundedButton.swift in Sources */,
 				EA02C47929A477F600EB3125 /* ScreenSize.swift in Sources */,

@@ -5,7 +5,7 @@ import UIKit
 final class VirtualCardViewController: UIViewController {
     
     var viewModel: VirtualCardViewModel?
-    var selectedLocation: [String] = []
+    private var selectedLocation: [String] = []
     private var idNo: String = ""
     private var startDate: String = ""
     private var endDate: String = ""
@@ -109,7 +109,7 @@ final class VirtualCardViewController: UIViewController {
     private func bind() {
         self.viewModel?.listArea.observe(on: self) { [weak self] data in
             guard let self = self else { return }
-//            self.locationListInputView.listLocation = data
+            self.locationListInputView.listLocation = data
             for id in data {
                 self.areaIds.append(id.id)
             }
@@ -213,7 +213,7 @@ final class VirtualCardViewController: UIViewController {
         
         self.locationListInputView.callBackSeletedLocation = { data in
             if self.selectedLocation.contains(data) {
-                self.showError(with: "location has been selected")
+                self.showError(with: "Location has been selected")
             } else {
                 self.selectedLocation.append(data)
             }

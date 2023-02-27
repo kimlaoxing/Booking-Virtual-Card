@@ -30,7 +30,6 @@
 		EAF51DCE29A8716800BF70A4 /* VirtualCardDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF51DCD29A8716800BF70A4 /* VirtualCardDomain.swift */; };
 		EAF51DD129A87A5000BF70A4 /* ListLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF51DD029A87A5000BF70A4 /* ListLocationCell.swift */; };
 		EAF51DD529A8995E00BF70A4 /* EmptyDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF51DD429A8995E00BF70A4 /* EmptyDataView.swift */; };
-		EAF51DD729A8AFAE00BF70A4 /* CreatEventParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF51DD629A8AFAE00BF70A4 /* CreatEventParam.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,7 +73,6 @@
 		EAF51DCD29A8716800BF70A4 /* VirtualCardDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardDomain.swift; sourceTree = "<group>"; };
 		EAF51DD029A87A5000BF70A4 /* ListLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLocationCell.swift; sourceTree = "<group>"; };
 		EAF51DD429A8995E00BF70A4 /* EmptyDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataView.swift; sourceTree = "<group>"; };
-		EAF51DD629A8AFAE00BF70A4 /* CreatEventParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatEventParam.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				EAF51DC929A8668C00BF70A4 /* AreaForSTIDResponse.swift */,
-				EAF51DD629A8AFAE00BF70A4 /* CreatEventParam.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,7 +381,6 @@
 				EAF51DCE29A8716800BF70A4 /* VirtualCardDomain.swift in Sources */,
 				EAA08BE629A7701A002FD929 /* VirtualCardInjection.swift in Sources */,
 				EAA08BD129A7696C002FD929 /* AreaForSTIDRepository.swift in Sources */,
-				EAF51DD729A8AFAE00BF70A4 /* CreatEventParam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

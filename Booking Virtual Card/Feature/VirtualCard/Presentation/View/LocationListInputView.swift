@@ -4,8 +4,7 @@ import Components
 final class LocationListInputView: UIView {
     
     private var pickerView = UIPickerView()
-//    var listLocation: [ListAreaResult] = []
-    var listLocation: [String] = ["ON Space, GF, ME COMM", "ON Space, L5, ME COMM"]
+    var listLocation: [ListAreaResult] = []
     var selectCallBackToast: (() -> Void)?
     var callBackSeletedLocation: ((String) -> Void)?
     
@@ -74,24 +73,11 @@ extension LocationListInputView: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return self.listLocation[row]
+        return self.listLocation[row].location
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        self.callBackSeletedLocation?(self.listLocation[row])
-//        if firstLocationListView.isFilled {
-//            if firstLocationListView.valueLabel == self.listLocation[row].location {
-//                self.selectCallBackToast?()
-//            } else {
-//                self.secondLocationListView.setContent(with: self.listLocation[row].location ?? "")
-//                self.secondLocationListView.isHidden = false
-//                self.emptyData.isHidden = true
-//            }
-//        } else {
-//            self.firstLocationListView.setContent(with: self.listLocation[row].location ?? "")
-//            self.firstLocationListView.isHidden = false
-//            self.emptyData.isHidden = true
-//        }
+        self.callBackSeletedLocation?(self.listLocation[row].location)
         self.endEditing(true)
     }
 }

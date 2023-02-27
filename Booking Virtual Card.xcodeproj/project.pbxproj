@@ -18,13 +18,13 @@
 		EA02C48B29A47F0400EB3125 /* VirtualCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48A29A47F0400EB3125 /* VirtualCardViewController.swift */; };
 		EA02C48D29A485CA00EB3125 /* SelectDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48C29A485CA00EB3125 /* SelectDateView.swift */; };
 		EA02C48F29A495EA00EB3125 /* LocationListInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */; };
-		EA02C49229A4999200EB3125 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C49129A4999200EB3125 /* LocationListView.swift */; };
 		EA02C49429A49FEA00EB3125 /* SubmitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C49329A49FEA00EB3125 /* SubmitedView.swift */; };
 		EAA08BD129A7696C002FD929 /* AreaForSTIDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BD029A7696C002FD929 /* AreaForSTIDRepository.swift */; };
 		EAA08BD529A7699B002FD929 /* ListAreaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BD429A7699B002FD929 /* ListAreaResult.swift */; };
 		EAA08BD829A76AF5002FD929 /* ListPokemonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BD729A76AF5002FD929 /* ListPokemonMapper.swift */; };
 		EAA08BE329A76F8E002FD929 /* VirtualCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BE229A76F8E002FD929 /* VirtualCardViewModel.swift */; };
 		EAA08BE629A7701A002FD929 /* VirtualCardInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BE529A7701A002FD929 /* VirtualCardInjection.swift */; };
+		EAB3A81229AC482E00E60EFE /* ListAreaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB3A81129AC482D00E60EFE /* ListAreaMapper.swift */; };
 		EAF51DCA29A8668C00BF70A4 /* AreaForSTIDResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF51DC929A8668C00BF70A4 /* AreaForSTIDResponse.swift */; };
 		EAF51DCC29A8708700BF70A4 /* AreaForSTIDRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF51DCB29A8708700BF70A4 /* AreaForSTIDRemoteDataSource.swift */; };
 		EAF51DCE29A8716800BF70A4 /* VirtualCardDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF51DCD29A8716800BF70A4 /* VirtualCardDomain.swift */; };
@@ -61,13 +61,13 @@
 		EA02C48A29A47F0400EB3125 /* VirtualCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardViewController.swift; sourceTree = "<group>"; };
 		EA02C48C29A485CA00EB3125 /* SelectDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateView.swift; sourceTree = "<group>"; };
 		EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListInputView.swift; sourceTree = "<group>"; };
-		EA02C49129A4999200EB3125 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		EA02C49329A49FEA00EB3125 /* SubmitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitedView.swift; sourceTree = "<group>"; };
 		EAA08BD029A7696C002FD929 /* AreaForSTIDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaForSTIDRepository.swift; sourceTree = "<group>"; };
 		EAA08BD429A7699B002FD929 /* ListAreaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAreaResult.swift; sourceTree = "<group>"; };
 		EAA08BD729A76AF5002FD929 /* ListPokemonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonMapper.swift; sourceTree = "<group>"; };
 		EAA08BE229A76F8E002FD929 /* VirtualCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardViewModel.swift; sourceTree = "<group>"; };
 		EAA08BE529A7701A002FD929 /* VirtualCardInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardInjection.swift; sourceTree = "<group>"; };
+		EAB3A81129AC482D00E60EFE /* ListAreaMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAreaMapper.swift; sourceTree = "<group>"; };
 		EAF51DC929A8668C00BF70A4 /* AreaForSTIDResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaForSTIDResponse.swift; sourceTree = "<group>"; };
 		EAF51DCB29A8708700BF70A4 /* AreaForSTIDRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaForSTIDRemoteDataSource.swift; sourceTree = "<group>"; };
 		EAF51DCD29A8716800BF70A4 /* VirtualCardDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardDomain.swift; sourceTree = "<group>"; };
@@ -165,7 +165,6 @@
 				EAF51DD429A8995E00BF70A4 /* EmptyDataView.swift */,
 				EA02C48C29A485CA00EB3125 /* SelectDateView.swift */,
 				EA02C48E29A495EA00EB3125 /* LocationListInputView.swift */,
-				EA02C49129A4999200EB3125 /* LocationListView.swift */,
 				EA02C49329A49FEA00EB3125 /* SubmitedView.swift */,
 			);
 			path = View;
@@ -220,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				EAA08BD729A76AF5002FD929 /* ListPokemonMapper.swift */,
+				EAB3A81129AC482D00E60EFE /* ListAreaMapper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -370,7 +370,6 @@
 				EAF51DCC29A8708700BF70A4 /* AreaForSTIDRemoteDataSource.swift in Sources */,
 				EA02C42C29A472F000EB3125 /* AppDelegate.swift in Sources */,
 				EA02C48F29A495EA00EB3125 /* LocationListInputView.swift in Sources */,
-				EA02C49229A4999200EB3125 /* LocationListView.swift in Sources */,
 				EAA08BE329A76F8E002FD929 /* VirtualCardViewModel.swift in Sources */,
 				EA02C49429A49FEA00EB3125 /* SubmitedView.swift in Sources */,
 				EA02C42E29A472F100EB3125 /* SceneDelegate.swift in Sources */,
@@ -381,6 +380,7 @@
 				EAF51DCE29A8716800BF70A4 /* VirtualCardDomain.swift in Sources */,
 				EAA08BE629A7701A002FD929 /* VirtualCardInjection.swift in Sources */,
 				EAA08BD129A7696C002FD929 /* AreaForSTIDRepository.swift in Sources */,
+				EAB3A81229AC482E00E60EFE /* ListAreaMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,6 @@
 		EA02C49429A49FEA00EB3125 /* SubmitedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA02C49329A49FEA00EB3125 /* SubmitedView.swift */; };
 		EAA08BD129A7696C002FD929 /* AreaForSTIDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BD029A7696C002FD929 /* AreaForSTIDRepository.swift */; };
 		EAA08BD529A7699B002FD929 /* ListAreaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BD429A7699B002FD929 /* ListAreaResult.swift */; };
-		EAA08BD829A76AF5002FD929 /* ListPokemonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BD729A76AF5002FD929 /* ListPokemonMapper.swift */; };
 		EAA08BE329A76F8E002FD929 /* VirtualCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BE229A76F8E002FD929 /* VirtualCardViewModel.swift */; };
 		EAA08BE629A7701A002FD929 /* VirtualCardInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA08BE529A7701A002FD929 /* VirtualCardInjection.swift */; };
 		EAB3A81229AC482E00E60EFE /* ListAreaMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB3A81129AC482D00E60EFE /* ListAreaMapper.swift */; };
@@ -64,7 +63,6 @@
 		EA02C49329A49FEA00EB3125 /* SubmitedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitedView.swift; sourceTree = "<group>"; };
 		EAA08BD029A7696C002FD929 /* AreaForSTIDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaForSTIDRepository.swift; sourceTree = "<group>"; };
 		EAA08BD429A7699B002FD929 /* ListAreaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAreaResult.swift; sourceTree = "<group>"; };
-		EAA08BD729A76AF5002FD929 /* ListPokemonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonMapper.swift; sourceTree = "<group>"; };
 		EAA08BE229A76F8E002FD929 /* VirtualCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardViewModel.swift; sourceTree = "<group>"; };
 		EAA08BE529A7701A002FD929 /* VirtualCardInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCardInjection.swift; sourceTree = "<group>"; };
 		EAB3A81129AC482D00E60EFE /* ListAreaMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAreaMapper.swift; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 		EAA08BD629A76AE9002FD929 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				EAA08BD729A76AF5002FD929 /* ListPokemonMapper.swift */,
 				EAB3A81129AC482D00E60EFE /* ListAreaMapper.swift */,
 			);
 			path = Utils;
@@ -376,7 +373,6 @@
 				EAF51DD529A8995E00BF70A4 /* EmptyDataView.swift in Sources */,
 				EA02C48D29A485CA00EB3125 /* SelectDateView.swift in Sources */,
 				EAF51DD129A87A5000BF70A4 /* ListLocationCell.swift in Sources */,
-				EAA08BD829A76AF5002FD929 /* ListPokemonMapper.swift in Sources */,
 				EAF51DCE29A8716800BF70A4 /* VirtualCardDomain.swift in Sources */,
 				EAA08BE629A7701A002FD929 /* VirtualCardInjection.swift in Sources */,
 				EAA08BD129A7696C002FD929 /* AreaForSTIDRepository.swift in Sources */,
